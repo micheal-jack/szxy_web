@@ -1,0 +1,425 @@
+/* 公共头部和底部的css */
+
+.headerwrapper {
+    width: 100%;
+    height: 46px;
+    border-bottom: 1px solid #e0e0e0;
+    background: #f7f7f7;
+}
+
+
+/* 头部对应的css部分 */
+
+.header {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.welcome {
+    line-height: 45px;
+    float: left;
+    height: 100%;
+}
+
+.headerright {
+    float: right;
+    height: 100%;
+}
+
+.headerright a {
+    display: block;
+    float: left;
+    height: 100%;
+}
+
+
+/* 头部登录 */
+
+.login {
+    line-height: 45px;
+    width: 68px;
+    text-indent: 20px;
+    background: url(../images/login.jpg) no-repeat left center;
+}
+
+
+/* 登录之后显示用户名部分css */
+
+.user {
+    position: relative;
+    float: left;
+    width: 141px;
+    height: 100%;
+    cursor: pointer;
+    background: url(../images/down1.png) no-repeat 100px 15px;
+    background-size: 15px 15px;
+}
+
+.user2 {
+    height: 205px;
+    background-color: #fff;
+    background-image: url(../images/up1.png);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.user span {
+    font-size: 14px;
+    line-height: 45px;
+    display: block;
+    width: 100%;
+    text-indent: 45px;
+}
+
+.user .dropbox {
+    position: absolute;
+    z-index: 2;
+    top: 45px;
+    display: none;
+    width: 140px;
+    background: #fff;
+}
+
+.dropbox a {
+    font-size: 14px;
+    line-height: 40px;
+    display: block;
+    width: 100%;
+    text-indent: 45px;
+}
+
+.dropbox a:hover {
+    background: #f7f7f7;
+}
+
+.message {
+    width: 40px;
+    background: url(../images/message.jpg) no-repeat center;
+}
+
+.message .number {
+    font-size: 9px;
+    line-height: 16px;
+    display: block;
+    float: right;
+    width: 17px;
+    height: 17px;
+    margin-top: 7px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background: #fb4500;
+}
+
+.email {
+    width: 40px;
+    margin-left: 10px;
+    background: url(../images/email.jpg) no-repeat center;
+}
+
+
+/* 导航栏部分对应css */
+
+.nav {
+    overflow: hidden;
+    width: 980px;
+    height: 116px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    margin-top: 22px;
+}
+
+.info {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 20px;
+    float: left;
+    height: 20px;
+    margin-top: 48px;
+    text-indent: 16px;
+    border-left: 2px solid #bfbfbf;
+}
+
+.navul {
+    float: right;
+    height: 24px;
+    margin-top: 46px;
+}
+
+.navul li {
+    float: left;
+    height: 100%;
+}
+
+.navul li a {
+    line-height: 24px;
+    margin-right: 24px;
+    color: #333;
+}
+
+.navul li:last-child a {
+    margin: 0;
+}
+
+.navul li a:hover {
+    color: #f25719;
+}
+
+.color-line {
+    width: 100%;
+    height: 1px;
+    background: #36b991;
+}
+
+
+/* 右侧登录框 */
+
+.loginbox {
+    float: right;
+    width: 300px;
+    height: 373px;
+    margin-top: 10px;
+}
+
+
+/* 登录框头部 */
+
+.loginboxtop {
+    width: 100%;
+    height: 45px;
+}
+
+.loginboxtop div {
+    line-height: 36px;
+    float: left;
+    height: 37px;
+    margin-top: 8px;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid #9fa094;
+    border-bottom: 1px solid #9fa094;
+}
+
+.teacherspace {
+    width: 104px;
+    cursor: pointer;
+    border-top-left-radius: 5px;
+    background-color: rgba( 202, 202, 202, .651);
+}
+
+.studentspace {
+    width: 105px;
+    cursor: pointer;
+    background-color: rgba( 202, 202, 202, .651);
+}
+
+.kong {
+    width: 91px;
+    border-top-right-radius: 5px;
+    background-color: rgba( 202, 202, 202, .651);
+}
+
+.kong img {
+    float: right;
+    margin-top: 14px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+
+/* 被点击的空间所添加样式 */
+
+.loginboxtop .clicked {
+    line-height: 45px;
+    height: 100%;
+    margin-top: 0;
+    text-align: center;
+    color: #ff9d1c;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba( 253, 253, 252, .678);
+}
+
+.loginpart {
+    width: 100%;
+    height: 328px;
+    padding-top: 134px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: url(../images/loginlogo.png) no-repeat center 30px;
+    background-color: rgba( 253, 253, 252, .678);
+}
+
+.hide {
+    display: none;
+}
+
+.loginpart .loginaccount,
+.loginpart .loginpassword {
+    display: block;
+    width: 258px;
+    height: 37px;
+    margin: 0 auto 10px;
+    padding-left: 14px;
+    border: 1px solid #efefef;
+    background: #fff;
+}
+
+.loginpart .loginbtn {
+    display: block;
+    width: 258px;
+    height: 37px;
+    margin: 0 auto 16px;
+    color: #fff;
+    background: #ff9d1c;
+}
+
+
+/* 自动登录部分css */
+
+.automatic {
+    display: none;
+}
+
+.automatic + label {
+    display: inline-block;
+    float: left;
+    width: 17px;
+    height: 17px;
+    margin-left: 21px;
+    padding: 0 0 0 0;
+    background: url(../images/nocheck.jpg) no-repeat;
+}
+
+.automatic:checked + label {
+    background: url(../images/checked.jpg) no-repeat;
+}
+
+.autoinfo {
+    font-size: 12px;
+    float: left;
+    text-indent: 15px;
+}
+
+.forgetpassword {
+    font-size: 12px;
+    float: right;
+    margin-right: 21px;
+    text-decoration: underline;
+}
+
+
+/* 页面底部css */
+
+.footer {
+    width: 980px;
+    height: 190px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+
+/* 底部左侧 */
+
+.footleft {
+    float: left;
+    width: 500px;
+}
+
+.footul {
+    overflow: hidden;
+}
+
+.footul li {
+    float: left;
+    margin-right: 25px;
+}
+
+.footul li a {
+    font-size: 14px;
+}
+
+.footul li a:hover {
+    color: #36b991;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 18px;
+    width: 490px;
+    height: 50px;
+    margin-top: 10px;
+    color: #999;
+}
+
+.technicalsupport {
+    font-size: 12px;
+    color: #999;
+}
+
+
+/* 底部右侧 */
+
+.footright {
+    float: right;
+}
+
+.footright .contact {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #666;
+}
+
+.footright p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #999;
+}
+
+
+/* 登录页面部分css */
+
+.loginnav .logo {
+    margin-left: 20px;
+}
+
+.login-bannerwrapper {
+    width: 100%;
+    height: 563px;
+    background: url(../images/loginbanner2.jpg) no-repeat center top;
+}
+
+.loginbanner {
+    width: 980px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.loginbanner .loginbox {
+    margin-top: 30px;
+    margin-right: 55px;
+}
+
+
+/* 横线 */
+
+.line {
+    clear: both;
+    width: 100%;
+    height: 1px;
+    margin-top: -1px;
+    background: #e7e7e7;
+}
+
+@media screen and (min-width: 1024px) {
+    .header,
+    .nav,
+    .footer,
+    .loginbanner {
+        width: 1220px;
+    }
+}
