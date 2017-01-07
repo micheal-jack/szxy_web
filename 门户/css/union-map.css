@@ -1,0 +1,132 @@
+.title {
+    font-size: 14px;
+    line-height: 76px;
+    width: 90%;
+    height: 76px;
+    margin: 0 auto;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    min-width: 980px;
+    height: 860px;
+    background: #f2fefe;
+}
+
+.center {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.center-right {
+    float: right;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 30%;
+    height: 823px;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.cr-top {
+    overflow: hidden;
+    width: 83%;
+    margin: 0 auto;
+    /*height: 260px;*/
+    padding-left: 5%;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cr-top p {
+    line-height: 36px;
+}
+
+.cr-top p:first-child {
+    font-size: 18px;
+    line-height: 70px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.cr-top p span {
+    color: #e60012;
+}
+
+.cr-top p .marginleft {
+    margin-left: 25px;
+}
+
+.cr-top .timetables {
+    font-size: 12px;
+    line-height: 40px;
+    display: block;
+    width: 180px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    text-indent: 70px;
+    color: #fff;
+    border-radius: 4px;
+    background: #36b991 url(../images/check1.jpg) no-repeat 23px center;
+}
+
+.schoolinfo {
+    display: block;
+    padding: 20px;
+    padding-right: 0;
+}
+
+.schoolinfo p {
+    font-size: 14px;
+    line-height: 30px;
+    text-indent: 28px;
+}
+
+.schoolinfo p:first-child {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 6px;
+    text-indent: 0;
+    color: #333;
+}
+
+.schoolinfo p:first-child span {
+    font-size: 15px;
+    display: block;
+    float: left;
+    width: 19px;
+    height: 30px;
+    margin-right: 8px;
+    text-align: center;
+    color: #fff;
+    background: url(../images/bubble.png) no-repeat left center;
+}
+
+
+/*滚动条 start*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 4px;
+    background-color: #f5f5f5;
+}
+
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+::-webkit-scrollbar-track {
+    background: #ededed;
+}
+
+
+/*定义滑块 内阴影+圆角*/
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(54, 185, 145, .7);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(54, 185, 145, 1);
+}

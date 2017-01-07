@@ -1,0 +1,107 @@
+/*教学中心页面css*/
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+}
+.navul li:nth-child(6) a{
+    color: #f25719;
+}
+
+/*教师空间核心功能*/
+
+.teacher,
+.student {
+    width: 100%;
+    height: 510px;
+    margin-top: 10px;
+    border: 1px solid #e7e7e7;
+}
+
+.student legend,
+.teacher legend {
+    font-size: 18px;
+    line-height: 170px;
+    width: 165px;
+    height: 98px;
+    margin: 0 auto;
+    text-align: center;
+    color: #5a77af;
+    background: url(../images/teacher-legend.jpg) no-repeat center 27px;
+}
+
+.teacher p {
+    line-height: 32px;
+    float: left;
+    width: 200px;
+    height: 290px;
+    margin-top: 85px;
+    margin-left: 95px;
+    padding-top: 164px;
+    text-align: center;
+    background: url(../images/function1.jpg) no-repeat center top;
+}
+
+.teacher .function2 {
+    background-image: url(../images/function2.jpg);
+}
+
+.teacher .function3 {
+    background-image: url(../images/function3.jpg);
+}
+
+
+/*学生空间优势不同部分*/
+
+.student {
+    margin-bottom: 20px;
+}
+
+.student legend {
+    width: 160px;
+    color: #9bc315;
+    background-image: url(../images/student-legend.jpg);
+}
+
+.student div {
+    float: left;
+    width: 224px;
+    height: 270px;
+    margin-top: 65px;
+    margin-left: 77px;
+    padding-top: 164px;
+    background: url(../images/advantage1.jpg) no-repeat center top;
+}
+
+.student div p {
+    line-height: 32px;
+    text-align: center;
+}
+
+.student div p:nth-child(1) {
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.student .advantage2 {
+    background-image: url(../images/advantage2.jpg);
+}
+
+.student .advantage3 {
+    background-image: url(../images/advantage3.jpg);
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 1220px;
+
+    }
+    .teacher p {
+        margin-left: 155px;
+    }
+    .student div {
+        margin-left: 137px;
+    }
+
+
+}

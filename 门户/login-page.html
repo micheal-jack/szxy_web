@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/same.css">
+</head>
+
+<body>
+    <!-- 用户登录页面 -->
+    <!-- logo和导航栏部分 -->
+    <div class="nav loginnav">
+        <a href="index.html">
+            <img class="logo" src="images/logo.jpg">
+        </a>
+        <p class="info">咸安分校</p>
+    </div>
+    <!-- 横幅区 横幅背景图为 loginbanner1.jpg,loginbanner2.jpg,loginbanner3.jpg 两小时切换一次-->
+    <div class="login-bannerwrapper">
+        <!-- 横幅中心 -->
+        <div class="loginbanner">
+            <!-- 用户登陆部分 -->
+            <div class="loginbox">
+                <!-- 登录部分头部 -->
+                <div class="loginboxtop">
+                    <div class="teacherspace clicked">教师空间</div>
+                    <div class="studentspace">学生空间</div>
+                    <div class="kong">
+                        <img src="images/loginclose.png">
+                    </div>
+                </div>
+                <!-- 教师空间登陆部分 -->
+                <div class="loginpart">
+                    <form action="">
+                        <input class="loginaccount" type="text" placeholder="请您填写登录账号">
+                        <input class="loginpassword" type="password" placeholder="密码">
+                        <input class="loginbtn" type="button" value="登录">
+                        <!-- 自动登录部分 -->
+                        <input class="automatic" type='checkbox' name='thing' value='value' id="automatic" />
+                        <label for="automatic"></label>
+                        <p class="autoinfo">自动登录</p>
+                    </form>
+                    <a class="forgetpassword" href="javascript:;">忘记密码？点这里</a>
+                </div>
+                <!-- 学生空间登陆部分 -->
+                <div class="loginpart hide">
+                    <form action="">
+                        <input class="loginaccount" type="text" placeholder="请您填写登录账号">
+                        <input class="loginpassword" type="password" placeholder="密码">
+                        <input class="loginbtn" type="button" value="登录">
+                        <!-- 自动登录部分 -->
+                        <input class="automatic" type='checkbox' name='thing' value='value' id="automatic2" />
+                        <label for="automatic2"></label>
+                        <p class="autoinfo">自动登录</p>
+                    </form>
+                    <a class="forgetpassword" href="javascript:;">忘记密码？点这里</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面底部 -->
+    <div class="footer">
+        <div class="footleft">
+            <ul class="footul">
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">联系我们</a></li>
+                <li><a href="javascript:;">法律条款</a></li>
+                <li><a href="javascript:;">帮助中心</a></li>
+                <li><a href="javascript:;">意见反馈</a></li>
+            </ul>
+            <p class="copyright">
+                版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有
+            </p>
+            <p class="technicalsupport">技术支持：中邮世纪（北京）通信技术有限公司</p>
+        </div>
+        <div class="footright">
+            <p class="contact">联系我们</p>
+            <p>地址：湖北省武汉市洪山区珞喻路152号</p>
+            <p>邮政编码：</p>
+            <p>电话：400-111-111</p>
+            <p>E-mail:shuzixuexiao@126.com</p>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
