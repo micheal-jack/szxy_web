@@ -1,19 +1,9 @@
 $(function(){
 
-	$("#click-tab1 a").click(function(){
+	$(".click-tab a").click(function(){
 		$(this).addClass("active").siblings().removeClass("active");
 		var index = $(this).index();
-		$("#mine-list1 > ul").eq(index).addClass("dis-block").siblings().removeClass("dis-block");
-	})
-	$("#click-tab2 a").click(function(){
-		$(this).addClass("active").siblings().removeClass("active");
-		var index = $(this).index();
-		$("#mine-list2 > ul").eq(index).addClass("dis-block").siblings().removeClass("dis-block");
-	})
-	$("#click-tab3 a").click(function(){
-		$(this).addClass("active").siblings().removeClass("active");
-		var index = $(this).index();
-		$("#mine-list3 > ul").eq(index).addClass("dis-block").siblings().removeClass("dis-block");
+		$(this).parents(".container").find(".mine-list > ul").eq(index).addClass("dis-block").siblings().removeClass("dis-block");
 	})
 
 
