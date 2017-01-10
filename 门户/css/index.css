@@ -3,7 +3,7 @@
 
 /* banner部分css */
 
-.navul .active {
+.navul li:nth-child(1) a {
     color: #f25719;
 }
 
@@ -494,7 +494,7 @@
     position: absolute;
     right: 20px;
     bottom: 0;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .answerer {

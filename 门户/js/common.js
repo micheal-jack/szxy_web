@@ -58,7 +58,6 @@ $(".seemore").click(function() {
 // 左侧导航栏对应右侧
 $(".ml-nav .link").click(function() {
     var index = $(".link").index(this);
-    // console.log(index);
     $(".ml-nav .link").removeClass("active");
     $(this).addClass("active");
     $(".main-right > div").eq(index).show().siblings().hide();

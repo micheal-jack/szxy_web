@@ -1,5 +1,9 @@
 /*联合体学校进入页*/
 
+.navul li:nth-child(4) a {
+    color: #f25719;
+}
+
 .container {
     width: 980px;
     margin: 0 auto;
@@ -67,9 +71,11 @@
     background: url(../images/down1.png) no-repeat;
     background-size: 18px 15px;
 }
+
 .info-right .expand:hover {
     background-image: url(../images/down-hover.png);
 }
+
 .info-right .withdraw {
     width: 62px;
     height: 20px;
@@ -83,8 +89,9 @@
     position: absolute;
     bottom: -20px;
     right: 5px;
-    display:none;
+    display: none;
 }
+
 .links {
     overflow: hidden;
     margin-top: 5px;

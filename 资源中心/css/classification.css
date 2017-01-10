@@ -1,0 +1,301 @@
+@charset 'utf-8';
+
+/* CSS Document */
+
+.container {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.container .title {
+    border-bottom: 1px solid #ddd;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.relative {
+    position: relative;
+}
+
+.shaixuan-tj {
+    height: 76px;
+}
+
+.shaixuan-tj span,
+.shaixuan-tj i {
+    line-height: 76px;
+    /*margin: 10px 5px 10px 0;*/
+    float: left;
+    height: 76px;
+}
+
+.border {
+    border: 1px #ddd solid;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.shaixuan-tj span.crumb-select-item {
+    line-height: 22px;
+    position: relative;
+    float: left;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 7px 46px 7px 10px;
+    cursor: pointer;
+    border: 1px solid #f34c00;
+}
+
+.shaixuan-tj span.crumb-select-item i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    float: none;
+    width: 25px;
+    height: 36px;
+    margin: 0;
+    text-align: center;
+    background: url(../images/icon-remove.jpg) no-repeat center;
+    background-size: 12px;
+}
+
+.shaixuan-tj span.crumb-select-item em,
+.shaixuan-tj span.crumb-select-item i {
+    color: #333;
+}
+
+.shaixuan-tj span.crumb-select-itemon {
+    border-color: #e4393c;
+}
+
+.shaixuan-tj span.crumb-select-itemon i {
+    color: #fff;
+    background: #e4393c;
+}
+
+.shaixuan-tj a:hover {
+    color: inherit;
+}
+
+.shaixuan-btn {
+    float: right;
+    width: 105px;
+}
+
+.shaixuan-btn span {
+    font-size: 14px;
+    line-height: 34px;
+    display: block;
+    float: right;
+    width: 103px;
+    height: 34px;
+    margin: 6px 0;
+    cursor: pointer;
+    text-align: center;
+    color: #666;
+    border: 1px solid #e8e8e8;
+    background: #f6f6f6;
+}
+
+.shaixuan-btn span i {
+    font-size: 18px;
+    margin-left: 5px;
+    color: #666;
+}
+
+.search-by {
+    width: 100%;
+}
+
+.search-by dl {
+    line-height: 40px;
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-by dl dt a {
+    font-weight: inherit;
+    line-height: 40px;
+    color: #666;
+}
+
+.search-by dl dt {
+    font-size: 14px;
+    width: 70px;
+    margin: 0;
+}
+
+.search-by dl dd a {
+    font-size: 14px;
+    line-height: 40px;
+    display: inline-block;
+    margin-left: 36px;
+    color: #333;
+}
+
+.search-by dl dd a:hover {
+    color: #f34c00;
+}
+
+.search-by dl dd a:first-child {
+    margin-left: 0;
+}
+
+.search-by dl .short a {
+    margin-left: 15px;
+}
+
+.search-by dl dd {
+    font-size: 14px;
+    width: auto;
+    height: 40px;
+}
+
+.search-by dl dd.show-more {
+    width: 70px;
+    padding: 0;
+    cursor: pointer;
+    text-align: right;
+}
+
+.search-by dl dd.show-more h3 {
+    font-size: 14px;
+    line-height: 14px;
+    line-height: 30px;
+    height: 30px;
+    border: none;
+    background: none;
+}
+
+.search-by dl dd.show-more h3 i {
+    font-size: 16px;
+    display: inline-block;
+    float: none;
+    margin-left: 5px;
+    background: none;
+}
+
+.icon-angle-right {
+    width: 18px;
+    background: url(../images/angle-right.jpg) no-repeat center;
+    background-size: 9px 15px;
+}
+
+.tab {
+    width: 1220px;
+    height: 40px;
+    margin: 26px auto 0;
+    border: 1px solid #ddd;
+    background: #f5f5f5;
+}
+
+.tab p {
+    font-size: 18px;
+    line-height: 38px;
+    float: left;
+    width: 139px;
+    height: 38px;
+    text-align: center;
+    color: #6d6d6d;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.tab .active {
+    margin-top: -1px;
+    color: #f34c00;
+    border-top: 2px solid #f34c00;
+    background: #fff;
+}
+
+.tabbox {
+    width: 1220px;
+    margin: 0 auto;
+}
+
+.textbook {
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 28px;
+    border-bottom: 1px solid #ddd;
+}
+
+.textbook li {
+    float: left;
+    width: 186px;
+    height: 320px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    padding: 15px 18px 0;
+    cursor: pointer;
+}
+
+.textbook li:hover {
+    border: 1px solid #ddd;
+}
+
+.textbook li:nth-child(6n) {
+    margin-right: 0;
+}
+
+.textbook li img {
+    width: 150px;
+    height: 214px;
+    margin-bottom: 15px;
+}
+
+.textbook li p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #333;
+}
+
+.textbook li .diff {
+    margin-top: 8px;
+    color: #999;
+}
+
+.textbook li .diff span {
+    color: #6dcad2;
+}
+
+.loadmore {
+    font-size: 12px;
+    line-height: 24px;
+    width: 182px;
+    height: 24px;
+    margin: 0 auto 37px;
+    cursor: pointer;
+    text-align: center;
+    color: #999;
+    border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 1024px) {
+    .container,
+    .tab,
+    .tabbox {
+        width: 980px;
+    }
+    .textbook li {
+        margin-right: 10px;
+    }
+    .textbook li:nth-child(6n) {
+        margin-right: 10px;
+    }
+    .textbook li:nth-child(5n) {
+        margin-right: 0;
+    }
+}
