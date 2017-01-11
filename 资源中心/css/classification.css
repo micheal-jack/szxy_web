@@ -30,7 +30,6 @@
 .shaixuan-tj span,
 .shaixuan-tj i {
     line-height: 76px;
-    /*margin: 10px 5px 10px 0;*/
     float: left;
     height: 76px;
 }
@@ -61,12 +60,17 @@
     right: 0;
     display: block;
     float: none;
-    width: 25px;
-    height: 36px;
+    width: 36px;
+    height: 34px;
     margin: 0;
     text-align: center;
     background: url(../images/icon-remove.jpg) no-repeat center;
     background-size: 12px;
+}
+
+.shaixuan-tj span.crumb-select-item i:hover {
+    background-image: url(../images/icon-remove-hover.jpg);
+    background-size: 36px 34px;
 }
 
 .shaixuan-tj span.crumb-select-item em,
@@ -206,10 +210,10 @@
     float: left;
     width: 139px;
     height: 38px;
+    cursor: pointer;
     text-align: center;
     color: #6d6d6d;
     border-right: 1px solid #ddd;
-    cursor: pointer;
 }
 
 .tab .active {
@@ -290,10 +294,10 @@
         width: 980px;
     }
     .textbook li {
-        margin-right: 10px;
+        margin-right: 12px;
     }
     .textbook li:nth-child(6n) {
-        margin-right: 10px;
+        margin-right: 12px;
     }
     .textbook li:nth-child(5n) {
         margin-right: 0;

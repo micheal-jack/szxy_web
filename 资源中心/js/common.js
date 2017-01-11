@@ -1,21 +1,21 @@
-// 首页js================================================================
+// 棣栭〉js================================================================
 
-// 右上角用户登录后下拉框选项
-$('.user').click(function(e) {
+// 鍙充笂瑙掔敤鎴风櫥褰曞悗涓嬫媺妗嗛�夐」
+$(".user").click(function(e) {
     var _this = $(this);
-    if ($('.dropbox').is(':hidden')) {
+    if ($(".dropbox").is(":hidden")) {
         $(".dropbox").show();
         _this.addClass("user2");
     } else {
-        $('.dropbox').hide();
+        $(".dropbox").hide();
         _this.removeClass("user2");
     }
-    $(document).one('click', function() {
-        $('.dropbox').hide();
+    $(document).one("click", function() {
+        $(".dropbox").hide();
         _this.removeClass("user2");
     });
     e.stopPropagation();
 });
-$('.dropbox').on('click', function(e) {
+$(".dropbox").on("click", function(e) {
     e.stopPropagation();
 });
