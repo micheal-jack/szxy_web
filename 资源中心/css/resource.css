@@ -25,7 +25,6 @@ a:hover{color: #f34c00 ! important;}
 .lunbo .l{left: 0;}
 .lunbo .r{right: 0;}
 .lunbo .cur{display: block;}
-
 /****************我的资源******************/
 .mine{margin-top: 30px;}
 .mine .mine-bline h2,
@@ -79,4 +78,57 @@ a:hover{color: #f34c00 ! important;}
 	.mine .mine-con li:nth-last-child(2){margin-right: 22px;}
     .mine-con li{margin-right: 22px;}
     .hot-re .mine-con li{margin-right: 19px;}
+}
+
+
+
+/****************教材预览******************/
+.preview-top h2{float: left;font-size: 24px;color: #333;line-height: 60px;}
+.preview-top ul{float: right;border-right: 1px solid #e1e1e1;}
+.preview-top ul li{float: left;border-left: 1px solid #e1e1e1;height: 60px;width: 65px;text-align: center;font-size: 12px;}
+.preview-top ul li i{display: inline-block;width: 52px;height:35px;background: url(../images/down.png) no-repeat center;background-size: 50%;}
+.preview-top ul li:nth-child(2) i{background: url(../images/collect.png) no-repeat center;background-size: 50%;}
+.preview-top ul li:nth-child(3) i{background: url(../images/share.png) no-repeat center;background-size: 50%;}
+.preview-top ul li:last-child i{background: url(../images/good.png) no-repeat center;background-size: 50%;}
+
+.preview-content{width: 100%;height: 646px;background:#686868;padding-top: 48px;}
+.preview-content .preview{width: 960px;height: 540px;background:#fff;margin:0 auto;}
+
+.related-resources{background: #f5f5f5;padding: 30px 0;}
+.related-left{float: left;width: 575px;height: 350px;background: #fff;padding: 24px 40px;}
+.related-right{float: right;width:385px;height: 350px;background: #fff;padding: 24px 25px;}
+.related-left h2,
+.related-right h2{font-size: 18px;color: #333;margin-bottom: 9px;}
+.related-left h2{margin-bottom: 30px;}
+.related-right dl{font-size: 12px;line-height: 24px;}
+.related-right dt{float: left;color: #999;}
+.related-right dd{color: #666;}
+.related-right .content-validity{margin-top: 10px;}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{width: 65%;}
+.swiper-pagination-bullet-active{background: #f34c00;border-color: #f34c00  ! important;}
+.swiper-pagination-bullet{border:1px solid #e0e0e0;width: 10px;height: 10px;}
+
+.related-car{background: #fff;padding: 0;}
+.related-car .mine-con li:last-child{display: block;}
+.related-car .mine-con{height: 182px;overflow: hidden;position: relative;}
+.related-car .mine-con li{margin-right: 34px;}
+.related-car .mine-con li:last-child{margin-right: 34px;}
+.related-car ol{margin: 38px auto 0;width: 80px;}
+.related-car ol li{float: left;width: 10px;height: 10px;display: inline-block;border: 1px solid #e0e0e0;border-radius: 100%;margin-right: 13px;cursor: pointer;}
+.related-car ol li.act{background: #f34c00;border-color: #f34c00;}
+.related-car ol li:last-child{margin-right: 0;}
+.related-car .mine-con li a{display: inline-block;}
+.related-car .mine-con li h2{margin-top: 3px;}
+
+.lun-bo{width:495px; height:260px; overflow:hidden;position:relative;}
+.lb-img{width:752px; height:260px; overflow:hidden; margin:0 auto; position:relative;padding: 0 1px;}
+.lb-img ul{width:99999px; height:175px; top:0; left:0; position:absolute;}
+.lb-img ul li{width:228px;float:left;margin-right: 34px;}
+.lb-img ul li img{width:228px;height:175px; float:left;}
+
+@media screen and (min-width: 1024px) {
+    .related-left{width: 832px;padding:24px 40px;}
+    .related-right{width: 368px;padding:24px 40px;}
+    .lun-bo{width:752px;}
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{width: 100%;}
 }
