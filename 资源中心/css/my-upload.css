@@ -13,6 +13,11 @@
     color: #333;
 }
 
+.title2 {
+    line-height: 77px;
+    height: 77px;
+}
+
 .title span {
     float: left;
 }
@@ -23,15 +28,17 @@
     background-size: 9px 15px;
 }
 
-.title > span:nth-of-type(2) {
+.title > span:nth-of-type(2),
+.title > span:nth-of-type(3) {
+    margin-left: 10px;
     padding-left: 20px;
+    color: #999;
     background: url(../images/angle-right.jpg) no-repeat left center;
     background-size: 9px 15px;
 }
 
-.title .add {
-    color: #999;
-}
+
+/*下拉框部分*/
 
 .linksbox {
     position: relative;
@@ -39,7 +46,6 @@
     float: left;
     width: 112px;
     height: 36px;
-    margin: 22px 10px 0 10px;
     margin-top: 22px;
     margin-left: 10px;
     cursor: pointer;
@@ -66,6 +72,9 @@
 .linksbox2 span {
     color: #333;
 }
+
+
+/*下拉框隐藏部分*/
 
 .linksbox .links {
     position: absolute;
@@ -111,11 +120,17 @@
     background: #fff;
 }
 
+
+/*订阅要求*/
+
 .subscribe {
     width: 100%;
     height: 752px;
     padding-top: 40px;
 }
+
+
+/*订阅要求每条选项*/
 
 .subscribe .option {
     font-size: 14px;
@@ -132,7 +147,7 @@
 }
 
 
-/*css部分*/
+/*单选框部分css*/
 
 input[type=radio] {
     display: none;
@@ -169,6 +184,9 @@ input[type=radio]:checked + label {
     border: 1px solid #979797;
 }
 
+
+/*确认新建*/
+
 .subscribe .confirm {
     font-size: 14px;
     width: 130px;
@@ -181,6 +199,9 @@ input[type=radio]:checked + label {
     background: #f34c00;
 }
 
+
+/*取消*/
+
 .subscribe .cancel {
     width: 130px;
     height: 38px;
@@ -191,8 +212,293 @@ input[type=radio]:checked + label {
     background: #e7e7e7;
 }
 
+
+/*资源上传页面部分css*/
+
+.main {
+    overflow: hidden;
+    width: 100%;
+}
+
+.mainleft {
+    float: left;
+    width: 226px;
+}
+
+.left-top {
+    width: 226px;
+    height: 131px;
+    padding: 12px 0 13px 16px;
+    border: 1px solid #ddd;
+}
+
+.left-top img {
+    float: left;
+    width: 74px;
+    height: 106px;
+}
+
+.left-top .resource-info {
+    font-size: 14px;
+    line-height: 30px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 18px;
+    color: #333;
+}
+
+.catalog {
+    font-size: 20px;
+    line-height: 48px;
+    width: 226px;
+    height: 48px;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    background: #36b991;
+}
+
+.nav-tree {
+    width: 224px;
+    background: #fbfbfb;
+}
+
+.nav-tree .opened {
+    background: #f2fffb;
+}
+
+.nav-tree a {
+    font-size: 14px;
+    line-height: 46px;
+    display: block;
+    height: 46px;
+    padding-left: 43px;
+    color: #666;
+}
+
+.nav-tree .group {
+    padding-left: 30px;
+    background: url(../images/down-triangle.jpg) no-repeat 194px 20px;
+    background-size: 13px 6px;
+}
+
+.nav-tree .group2 {
+    background-image: url(../images/up-triangle.jpg);
+}
+
+.nav-tree .nav-child {
+    display: none;
+}
+
+.nav-child .selected {
+    color: #f34c00;
+    background: url(../images/selected.jpg) repeat-y;
+}
+
+.mainright {
+    float: right;
+    width: 972px;
+}
+
+.uploadbox {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 227px;
+}
+
+.uploadbox .msg {
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.msg span {
+    font-size: 14px;
+    display: block;
+    float: left;
+    width: 150px;
+    margin-right: 10px;
+    text-align: right;
+    color: #666;
+}
+
+.selector {
+    font-size: 14px;
+    position: relative;
+    float: left;
+    width: 87px;
+    height: 26px;
+    margin-top: 7px;
+}
+
+.selector .select {
+    font-size: 14px;
+    line-height: 26px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #8f98a0;
+    border: 1px solid #979797;
+    background: url(../images/down1.png) no-repeat 67px center;
+    background-size: 10px 10px;
+}
+
+.selector .down {
+    position: absolute;
+    z-index: 1;
+    top: 26px;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin-top: -1px;
+    border: 1px solid #979797;
+    border-top: none;
+    background: #fff;
+}
+
+.selector .down p {
+    line-height: 26px;
+    width: 100%;
+    height: 26px;
+    padding-left: 10px;
+    cursor: pointer;
+    opacity: 1;
+    color: #323232;
+}
+
+.selector2 {
+    width: 118px;
+    margin-left: 20px;
+}
+
+.selector2 .select {
+    background-position: 98px center;
+}
+
+.selector3 {
+    width: 97px;
+}
+
+.selector3 .select {
+    background-position: 77px center;
+}
+
+
+/*文件上传*/
+
+.msg .uploadbtn {
+    width: 107px;
+    height: 28px;
+    border-radius: 2px;
+    text-indent: 39px;
+    display: block;
+    font-size: 14px;
+    color: #fff;
+    float: left;
+    margin-top: 7px;
+    line-height: 28px;
+    background: #36B991 url(../images/uploadbtn.jpg) no-repeat 10px center;
+    background-size: 20px;
+}
+
+.uploadlist {
+    width: 800px;
+    margin-left: 158px;
+}
+
+.uploadlist li {
+    height: 47px;
+    line-height: 47px;
+    border-bottom: 1px solid #F5F5F5;
+}
+
+.uploadlist .list-title {
+    height: 40px;
+    background: #F5F5F5;
+}
+
+.uploadlist li span {
+    height: 47px;
+    font-size: 14px;
+    float: left;
+    color: #333;
+}
+
+.uploadlist .list-title span {
+    height: 40px;
+    color: #999;
+    line-height: 40px;
+}
+
+.uploadlist li span:nth-of-type(1) {
+    width: 22%;
+    text-indent: 20px;
+}
+
+.uploadlist .list-title span:nth-of-type(1) {
+    text-indent: 10px;
+}
+
+.uploadlist li span:nth-of-type(2) {
+    width: 38%;
+}
+
+.uploadlist li span:nth-of-type(3) {
+    width: 12%;
+}
+
+.uploadlist li span:nth-of-type(4) {
+    width: 17%;
+}
+
+.uploadlist li span:nth-of-type(5) {
+    width: 11%;
+}
+
+.uploadlist li span:nth-of-type(5) img {
+    width: 18px;
+    height: 15px;
+    margin-top: 16px;
+}
+
+.confirm-upload,
+.cancel-upload {
+    width: 130px;
+    height: 38px;
+    background: #F34C00;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-left: 158px;
+}
+
+.cancel-upload {
+    background: #e7e7e7;
+    color: #666;
+    margin-left: 20px;
+    margin-top: 18px;
+}
+
 @media screen and (max-width: 1024px) {
     .container {
         width: 980px;
+    }
+    .mainright {
+        width: 734px;
+    }
+    .msg span {
+        width: 115px;
+    }
+    .uploadlist {
+        width: 609px;
+        margin-left: 125px;
+    }
+    .confirm-upload {
+        margin-left: 125px;
     }
 }
