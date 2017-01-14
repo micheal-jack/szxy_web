@@ -106,18 +106,33 @@
     background: #f5f5f5;
 }
 
-.tab p {
+.tab p,
+.tab .link {
     font-size: 18px;
     line-height: 38px;
+    float: left;
     width: 139px;
     height: 38px;
-    margin-top: -1px;
+    cursor: pointer;
     text-align: center;
     color: #6d6d6d;
+    border-right: 1px solid #ddd;
+}
+
+.tab .active {
+    margin-top: -1px;
     color: #f34c00;
     border-top: 2px solid #f34c00;
-    border-right: 1px solid #ddd;
     background: #fff;
+}
+
+.tab .link {
+    font-size: 16px;
+    display: block;
+    text-indent: 56px;
+    border-right: none;
+    background: url(../images/new-subscription.jpg) no-repeat 26px center;
+    background-size: 22px;
 }
 
 
@@ -349,12 +364,11 @@ input[type=radio]:checked + label {
 .selector .down {
     position: absolute;
     z-index: 1;
-    top: 26px;
+    top: 25px;
     display: none;
     overflow: hidden;
     width: 100%;
     height: auto;
-    margin-top: -1px;
     border: 1px solid #979797;
     border-top: none;
     background: #fff;
@@ -391,17 +405,17 @@ input[type=radio]:checked + label {
 /*文件上传*/
 
 .msg .uploadbtn {
+    font-size: 14px;
+    line-height: 28px;
+    display: block;
+    float: left;
     width: 107px;
     height: 28px;
-    border-radius: 2px;
-    text-indent: 39px;
-    display: block;
-    font-size: 14px;
-    color: #fff;
-    float: left;
     margin-top: 7px;
-    line-height: 28px;
-    background: #36B991 url(../images/uploadbtn.jpg) no-repeat 10px center;
+    text-indent: 39px;
+    color: #fff;
+    border-radius: 2px;
+    background: #36b991 url(../images/uploadbtn.jpg) no-repeat 10px center;
     background-size: 20px;
 }
 
@@ -411,27 +425,27 @@ input[type=radio]:checked + label {
 }
 
 .uploadlist li {
-    height: 47px;
     line-height: 47px;
-    border-bottom: 1px solid #F5F5F5;
+    height: 47px;
+    border-bottom: 1px solid #f5f5f5;
 }
 
 .uploadlist .list-title {
     height: 40px;
-    background: #F5F5F5;
+    background: #f5f5f5;
 }
 
 .uploadlist li span {
-    height: 47px;
     font-size: 14px;
     float: left;
+    height: 47px;
     color: #333;
 }
 
 .uploadlist .list-title span {
+    line-height: 40px;
     height: 40px;
     color: #999;
-    line-height: 40px;
 }
 
 .uploadlist li span:nth-of-type(1) {
@@ -467,21 +481,196 @@ input[type=radio]:checked + label {
 
 .confirm-upload,
 .cancel-upload {
+    font-size: 14px;
     width: 130px;
     height: 38px;
-    background: #F34C00;
-    border-radius: 2px;
-    font-size: 14px;
-    color: #FFFFFF;
-    cursor: pointer;
     margin-left: 158px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 2px;
+    background: #f34c00;
 }
 
 .cancel-upload {
-    background: #e7e7e7;
-    color: #666;
-    margin-left: 20px;
     margin-top: 18px;
+    margin-left: 20px;
+    color: #666;
+    background: #e7e7e7;
+}
+
+
+/*教材内容页面css*/
+
+.search {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.selector {
+    font-size: 14px;
+    position: relative;
+    float: left;
+    width: 100px;
+    height: 25px;
+    margin-top: 8px;
+    margin-right: 20px;
+}
+
+.selector .select {
+    font-size: 14px;
+    line-height: 25px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    cursor: pointer;
+    color: #8f98a0;
+    border: 1px solid #979797;
+    background: url(../images/down1.png) no-repeat 76px center;
+    background-size: 10px 10px;
+}
+
+.selector .down {
+    position: absolute;
+    z-index: 1;
+    top: 24px;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border: 1px solid #979797;
+    border-top: none;
+    background: #fff;
+}
+
+.selector .down p {
+    line-height: 25px;
+    width: 100%;
+    height: 25px;
+    padding-left: 10px;
+    cursor: pointer;
+    opacity: 1;
+    color: #323232;
+    overflow: hidden;
+}
+
+.search .right {
+    float: right;
+    margin-right: 16px;
+}
+
+.right form {
+    float: left;
+    width: 139px;
+    height: 25px;
+    margin-top: 9px;
+    border: 1px solid #e1e1e1;
+}
+
+.right form input[type=text] {
+    font-size: 12px;
+    float: left;
+    width: 109px;
+    height: 100%;
+    padding-left: 7px;
+    border-right: 1px solid #e1e1e1;
+}
+
+.right form input[type=submit] {
+    float: left;
+    width: 28px;
+    height: 100%;
+    background: url(../images/searchbtn.jpg) no-repeat 6px center;
+    background-size: 15px;
+}
+
+.right a {
+    font-size: 12px;
+    line-height: 40px;
+    display: block;
+    float: left;
+    width: 40px;
+    height: 100%;
+    margin-left: 16px;
+    text-align: center;
+}
+
+.right .active {
+    color: #f34c00;
+}
+
+.tab .result {
+    font-size: 12px;
+    line-height: 38px;
+    float: right;
+    margin-right: 14px;
+    color: #999;
+}
+
+.tab .result span {
+    color: #333;
+}
+
+.resourceul {
+    overflow: hidden;
+    padding-bottom: 180px;
+    border-bottom: 1px solid #ddd;
+}
+
+.resourceul li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 182px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+    border: 1px solid #ececec;
+    background: #fff;
+}
+
+.resourceul li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.resourceul li img {
+    width: 100%;
+    height: 118px;
+}
+
+.resourceul li .newest {
+    position: absolute;
+    top: 11px;
+    right: -10px;
+    display: block;
+    width: 47px;
+    height: 21px;
+    background: url(../images/newest.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.resourceul li h2 {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #333;
+}
+
+.resourceul li p {
+    font-size: 12px;
+    margin-top: 8px;
+    margin-left: 10px;
+    color: #999;
+}
+
+.resourceul li p span {
+    float: right;
+    margin-right: 10px;
+    color: #6dcad2;
 }
 
 @media screen and (max-width: 1024px) {
@@ -500,5 +689,14 @@ input[type=radio]:checked + label {
     }
     .confirm-upload {
         margin-left: 125px;
+    }
+    .resourceul li {
+        margin-right: 25px;
+    }
+    .resourceul li:nth-child(4n) {
+        margin-right: 25px;
+    }
+    .resourceul li:nth-child(3n) {
+        margin-right: 0;
     }
 }

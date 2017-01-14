@@ -41,7 +41,11 @@ $(function() {
         $(".nav-tree .course").removeClass("selected");
         $(this).addClass("selected");
     });
-});
+    // 教材内容页面js
+    $(".tab p").click(function() {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+
 //  下拉框
 $("body").mousedown(function(e) {
     if ($(e.target).is('.down')) {
@@ -50,22 +54,22 @@ $("body").mousedown(function(e) {
     $(".down").slideUp("fast");
 });
 
-function sel(s) {
-    var obj = s;
-    var ul = $(obj).parents(".selector").find(".down");
-    if (ul.css("display") == "none") {
-        ul.slideDown("fast");
-    } else {
-        ul.slideUp("fast");
+$(".selector .select").click(function(){
+    var obj = $(this);
+    var ul = obj.parents(".selector").find(".down");
+    if(ul.is(":visible")){
+        ul.slideUp();
+    }else {
+        ul.slideDown();
     }
-}
+});
+$(".down p").mousedown(function(){
+    var obj = $(this);
+    var txt = obj.html();
+    obj.parent().siblings(".select").val(txt);
+    obj.parent().siblings(".select").css("color","#14263f" );
+    obj.parent().hide();
+    obj.css("background", "#c8c8c8").siblings().css("background", "none");
+});
 
-function cel(m) {
-    var obj = m;
-    var txt = $(obj).html();
-    $(obj).parents(".selector").find(".select").val(txt);
-    $(obj).parents(".selector").find(".select").css({ 'opacity': '1', 'color': '#14263f' });
-    $(obj).parents(".selector").find(".down").css("display", "none");
-    $(obj).parents(".selector").find("p").css("background", "none");
-    $(obj).css("background", "#c8c8c8");
-}
+});

@@ -34,4 +34,16 @@ $(function() {
     $(".tab p").click(function(){
         $(this).addClass("active").siblings().removeClass("active");
     });
+
+    // 最新最热最赞处的点击变色效果
+    $(".right a").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+    $(".tab p").click(function(){
+        var index = $(this).index();
+        $(".tabbox > div").eq(index).show().siblings().hide();
+
+    });
+
+
 });

@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>资源中心-资源上传</title>
+    <title>资源中心-教材内容</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/same.css">
     <link rel="stylesheet" href="css/my-upload.css">
 </head>
 
 <body>
-    <!-- 资源中心-资源上传 -->
+    <!-- 资源中心-教材内容 -->
     <!-- 页面头部 -->
     <div class="headerwrapper">
         <div class="header">
@@ -56,7 +56,7 @@
     <div class="color-line"></div>
     <div class="container">
         <!-- 我的订阅 -->
-        <div class="title title2">
+        <div class="title">
             <span>我的资源</span>
             <div class="linksbox">
                 <span>我的上传</span>
@@ -65,8 +65,6 @@
                     <a href="javascript:;">我的收藏</a>
                 </div>
             </div>
-            <span>小学一年级语文(上) 人教版</span>
-            <span>上传资源</span>
         </div>
         <div class="main">
             <div class="mainleft">
@@ -110,78 +108,95 @@
             </div>
             <div class="mainright">
                 <div class="tab">
-                    <p class="active">上传资源</p>
+                    <p>最新</p>
+                    <p class="active">最热</p>
+                    <p>最赞</p>
+                    <a class="link" href="javascript:;">上传资源</a>
+                    <div class="result">筛选出 <span>100</span> 条资源</div>
                 </div>
-                <div class="uploadbox">
-                    <div class="msg">
-                        <span>栏目选择：</span>
-                        <div class="selector">
-                            <input class="select" type="text" placeholder="" value="" readonly/>
-                            <div class="down">
-                                <p>第一组</p>
-                                <p>第二组</p>
-                                <p>第三组</p>
-                            </div>
-                        </div>
-                        <div class="selector selector2">
-                            <input class="select" type="text" placeholder="" readonly/>
-                            <div class="down">
-                                <p>第一课 燕子</p>
-                                <p>第二课 故事两首</p>
-                                <p>第三课 荷花</p>
-                            </div>
+                <div class="search">
+                    <div class="selector">
+                        <input class="select" type="text" placeholder="" value="" readonly/>
+                        <div class="down">
+                            <p>教学资源</p>
+                            <p>学习资源</p>
                         </div>
                     </div>
-                    <div class="msg">
-                        <span>资源类型：</span>
-                        <div class="selector selector3">
-                            <input class="select" type="text" placeholder="" value="" readonly/>
-                            <div class="down">
-                                <p>教学资源</p>
-                                <p>学习资源</p>
-                            </div>
-                        </div>
-                        <div class="selector selector2">
-                            <input class="select" type="text" placeholder="资源类型" readonly/>
-                            <div class="down">
-                                <p>视频</p>
-                                <p>音频</p>
-                                <p>动画</p>
-                                <p>图文</p>
-                                <p>课件</p>
-                            </div>
+                    <div class="selector">
+                        <input class="select" type="text" placeholder="主编说课" value="" readonly/>
+                        <div class="down">
+                            <p>教学资源</p>
+                            <p>学习资源</p>
                         </div>
                     </div>
-                    <div class="msg">
-                        <span>文件上传：</span>
-                        <a class="uploadbtn" href="javascript:;">添加文件</a>
+                    <div class="selector selector2">
+                        <input class="select" type="text" placeholder="资源类型" readonly/>
+                        <div class="down">
+                            <p>视频</p>
+                            <p>音频</p>
+                            <p>动画</p>
+                            <p>图文</p>
+                            <p>课件</p>
+                        </div>
                     </div>
-                    <ul class="uploadlist">
-                        <!-- 列表头部 -->
-                        <li class="list-title">
-                            <span>文件名</span>
-                            <span>内容简介</span>
-                            <span>大小</span>
-                            <span>状态</span>
-                        </li>
-                        <li>
-                            <span>教学资源</span>
-                            <span>添加简介</span>
-                            <span>10k</span>
-                            <span>已上传</span>
-                            <span><img src="images/nofinish.jpg" alt=""></span>
-                        </li>
-                        <li>
-                            <span>教学资源</span>
-                            <span>添加简介</span>
-                            <span>10k</span>
-                            <span>已上传</span>
-                            <span><img src="images/finish.jpg" alt=""></span>
-                        </li>
-                    </ul>
-                    <input class="confirm-upload" type="submit" value="确认上传">
-                    <input class="cancel-upload" type="button" value="取消">
+                    <div class="selector">
+                        <input class="select" type="text" placeholder="文件类型" value="" readonly/>
+                        <div class="down">
+                            <p>教学资源</p>
+                            <p>学习资源</p>
+                        </div>
+                    </div>
+                    <!-- 右侧搜索 -->
+                    <div class="right">
+                        <form action="">
+                            <input type="text" placeholder="在结果中搜索">
+                            <input type="submit" value="">
+                        </form>
+                    </div>
                 </div>
+                <ul class="resourceul">
+                    <li>
+                        <span class="newest"></span>
+                        <a href="javascript:;"><img src="images/hot_t1.png" alt=""></a>
+                        <h2><a href="javascript:;">植物辨识讲解</a></h2>
+                        <p>小学一年级语文（上）<span>20阅读</span></p>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/hot_t1.png" alt=""></a>
+                        <h2><a href="javascript:;">植物辨识讲解</a></h2>
+                        <p>小学一年级语文（上）<span>20阅读</span></p>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/hot_t1.png" alt=""></a>
+                        <h2><a href="javascript:;">植物辨识讲解</a></h2>
+                        <p>小学一年级语文（上）<span>20阅读</span></p>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/hot_t1.png" alt=""></a>
+                        <h2><a href="javascript:;">植物辨识讲解</a></h2>
+                        <p>小学一年级语文（上）<span>20阅读</span></p>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/hot_t1.png" alt=""></a>
+                        <h2><a href="javascript:;">植物辨识讲解</a></h2>
+                        <p>小学一年级语文（上）<span>20阅读</span></p>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/hot_t1.png" alt=""></a>
+                        <h2><a href="javascript:;">植物辨识讲解</a></h2>
+                        <p>小学一年级语文（上）<span>20阅读</span></p>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/hot_t1.png" alt=""></a>
+                        <h2><a href="javascript:;">植物辨识讲解</a></h2>
+                        <p>小学一年级语文（上）<span>20阅读</span></p>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="images/hot_t1.png" alt=""></a>
+                        <h2><a href="javascript:;">植物辨识讲解</a></h2>
+                        <p>小学一年级语文（上）<span>20阅读</span></p>
+                    </li>
+                </ul>
             </div>
         </div>
         <!-- 一根横线 -->
