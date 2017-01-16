@@ -55,7 +55,7 @@
     <!-- 一根横线 -->
     <div class="color-line"></div>
     <div class="container">
-        <!-- 我的订阅 -->
+        <!-- 面包屑导航 -->
         <div class="title">
             <span>我的资源</span>
             <div class="linksbox">
@@ -68,10 +68,11 @@
             <span class="add">添加教材</span>
         </div>
         <div class="tab">
-            <p>添加教材</p>
+            <p class="active">添加教材</p>
         </div>
-        <!-- 订阅选项 -->
+        <!-- 添加教材选项 -->
         <div class="subscribe">
+            <!-- 学段 -->
             <p class="option">
                 <span>学段：</span>
                 <input type="radio" name="stage" value="" id="stage1" />
@@ -81,6 +82,7 @@
                 <input type="radio" name="stage" value="" id="stage3" />
                 <label for="stage3">高中</label>
             </p>
+            <!-- 学科 -->
             <p class="option">
                 <span>学科：</span>
                 <input type="radio" name="subject" value="" id="subject1" />
@@ -94,6 +96,7 @@
                 <input type="radio" name="subject" value="" id="subject5" />
                 <label for="subject5">心理健康</label>
             </p>
+            <!-- 版本 -->
             <p class="option">
                 <span>版本：</span>
                 <input type="radio" name="version" value="" id="version1" />
@@ -101,7 +104,9 @@
                 <input type="radio" name="version" value="" id="version2" />
                 <label for="version2">江浙版2002新课标</label>
             </p>
+            <!-- 确认添加按钮 -->
             <input class="confirm" type="submit" value="确认添加">
+            <!-- 取消添加按钮 -->
             <input class="cancel" type="button" value="取消">
         </div>
     </div>

@@ -30,10 +30,8 @@ $(function() {
         } else {
             brother.slideDown();
             parent.addClass("opened");
-            // parent.addClass("opened").siblings().removeClass("opened");
             $(".nav-tree .group").removeClass("group2");
             _this.addClass("group2");
-            // parent.siblings("li").find(".nav-child").slideUp();
         }
     });
     // 点击之后效果
@@ -46,30 +44,29 @@ $(function() {
         $(this).addClass("active").siblings().removeClass("active");
     });
 
-//  下拉框
-$("body").mousedown(function(e) {
-    if ($(e.target).is('.down')) {
-        return;
-    }
-    $(".down").slideUp("fast");
-});
+    //  下拉框
+    $("body").mousedown(function(e) {
+        if ($(e.target).is('.down')) {
+            return;
+        }
+        $(".down").slideUp("fast");
+    });
 
-$(".selector .select").click(function(){
-    var obj = $(this);
-    var ul = obj.parents(".selector").find(".down");
-    if(ul.is(":visible")){
-        ul.slideUp();
-    }else {
-        ul.slideDown();
-    }
-});
-$(".down p").mousedown(function(){
-    var obj = $(this);
-    var txt = obj.html();
-    obj.parent().siblings(".select").val(txt);
-    obj.parent().siblings(".select").css("color","#14263f" );
-    obj.parent().hide();
-    obj.css("background", "#c8c8c8").siblings().css("background", "none");
-});
-
+    $(".selector .select").click(function() {
+        var obj = $(this);
+        var ul = obj.parents(".selector").find(".down");
+        if (ul.is(":visible")) {
+            ul.slideUp();
+        } else {
+            ul.slideDown();
+        }
+    });
+    $(".down p").mousedown(function() {
+        var obj = $(this);
+        var txt = obj.html();
+        obj.parent().siblings(".select").val(txt);
+        obj.parent().siblings(".select").css("color", "#14263f");
+        obj.parent().hide();
+        obj.css("background", "#c8c8c8").siblings().css("background", "none");
+    });
 });

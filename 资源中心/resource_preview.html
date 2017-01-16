@@ -9,12 +9,8 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/same.css">
     <link rel="stylesheet" href="css/resource.css">
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/car.js"></script>
-    <script src="js/resource.js"></script>
-    <script src="js/swiper.min.js"></script>
 </head>
+
 <body>
     <!-- 资源中心-教材预览页面 -->
     <!-- 页面头部 -->
@@ -74,15 +70,13 @@
     <!-- 教材预览内容 -->
     <div class="preview-content">
         <div class="preview">
-           
         </div>
     </div>
-  <!-- 教材预览相关资源 -->
+    <!-- 教材预览相关资源 -->
     <div class="related-resources">
         <div class="container clearfix">
             <div class="related-left">
                 <h2>相关资源</h2>
-				 
                 <div class="lun-bo">
                     <div class="swiper-container lb-img related-car hot-re">
                         <ul class="swiper-wrapper mine-con clearfix">
@@ -106,13 +100,11 @@
                                 <h2><a href="javascript:;">植物辨识讲解4</a></h2>
                                 <p>小学一年级语文（上）<span>20阅读</span></p>
                             </li>
-
                         </ul>
-						<!-- Add Pagination -->
-						<div class="swiper-pagination"></div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
-
             </div>
             <div class="related-right">
                 <h2>资源简介</h2>
@@ -144,7 +136,7 @@
                     <dt>资源大小：</dt>
                     <dd>869.3KB</dd>
                 </dl>
-                 <dl class="content-validity clearfix">
+                <dl class="content-validity clearfix">
                     <dt>内容简介：</dt>
                     <dd>内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介内容简介</dd>
                 </dl>
@@ -176,16 +168,22 @@
             <p>E-mail:shuzixuexiao@126.com</p>
         </div>
     </div>
-</body>
-<script>
-	var swiper = new Swiper('.swiper-container', {
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/car.js"></script>
+    <script src="js/resource.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         slidesPerView: 3,
         paginationClickable: true,
         spaceBetween: 30,
-		loop:true,
-		autoplay:3000,
+        loop: true,
+        autoplay: 3000,
         autoplayDisableOnInteraction: false
     });
-</script>
+    </script>
+</body>
+
 </html>
