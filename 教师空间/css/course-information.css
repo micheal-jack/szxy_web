@@ -1,11 +1,16 @@
 /*开始备课页面css*/
+
+
 /*最外层div*/
 
 .container {
     width: 100%;
     background: #f5f5f5;
 }
+
+
 /*中间1220pxdiv*/
+
 .container-center {
     width: 1220px;
     margin: 0 auto;
@@ -18,7 +23,10 @@
     background: #fff;
     border: 1px solid #e5e4e4;
 }
+
+
 /*左侧头像*/
+
 .info-left {
     float: left;
     height: 100%;
@@ -62,13 +70,365 @@
     font-size: 14px;
     line-height: 30px;
 }
+
+
 /*右侧饼状图*/
+
 .info-right {
-	float: right;
-	padding-top: 30px;
-	padding-right: 21px;
+    float: right;
+    padding-top: 30px;
+    padding-right: 21px;
+    position: relative;
 }
+
 #main {
-	width: 150px;
-	height: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+
+/*预览和返回按钮*/
+
+.preview,
+.goback {
+    display: block;
+    width: 85px;
+    height: 25px;
+    border: 1px solid #ededed;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #333;
+    line-height: 25px;
+    position: absolute;
+    top: 30px;
+}
+
+.preview {
+    background: url(../images/preview.jpg) no-repeat 15px center;
+    right: 113px;
+    text-indent: 40px;
+}
+
+.goback {
+    background: #f3f3f3 url(../images/go-back.jpg) no-repeat 19px center;
+    right: 21px;
+    text-indent: 36px;
+}
+
+
+/*课程内容*/
+
+.main {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.mainleft {
+    width: 270px;
+    float: left;
+    background: #fff;
+}
+
+.mainleft h3 {
+    width: 100%;
+    height: 85px;
+    background: #36b991;
+    font-size: 24px;
+    line-height: 85px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.sidebar p {
+    height: 66px;
+    border-bottom: 1px solid #e7e7e7;
+    font-size: 18px;
+    color: #333;
+    line-height: 65px;
+    text-indent: 80px;
+}
+
+.sidebar p.active {
+    color: #36b991;
+    border-left: 2px solid #36b991;
+    text-indent: 78px;
+}
+
+.mainright {
+    width: 929px;
+    float: right;
+    background: #fff;
+    padding-bottom: 120px;
+}
+
+.mainright h3 {
+    width: 95%;
+    height: 88px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e7e7e7;
+    text-indent: 30px;
+    line-height: 88px;
+    font-size: 16px;
+    color: #333;
+}
+
+.mainright .option {
+    height: 60px;
+    line-height: 60px;
+}
+
+.option span,
+.option2 span {
+    width: 208px;
+    float: left;
+    display: block;
+    text-align: right;
+    font-size: 14px;
+}
+
+.option .input1,
+.option .input2 {
+    border: 1px solid #dad9d9;
+    height: 42px;
+    margin-left: 14px;
+    padding-left: 10px;
+}
+
+.option .input1 {
+    width: 165px;
+}
+
+.option .input2 {
+    width: 596px;
+}
+
+
+/*复选框css部分*/
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio] + label {
+    display: inline-block;
+    height: 55px;
+    margin-left: 20px;
+    padding-left: 27px;
+    cursor: pointer;
+    background: url(../images/nochecked.jpg) no-repeat left center;
+    background-size: 14px;
+}
+
+input[type=radio]:checked + label {
+    background-image: url(../images/checked.jpg);
+}
+
+
+/*下拉框代码*/
+
+.selector {
+    font-size: 14px;
+    position: relative;
+    float: left;
+    width: 165px;
+    height: 42px;
+    margin-top: 7px;
+    margin-left: 14px;
+}
+
+.selector .select {
+    font-size: 14px;
+    line-height: 26px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
+    cursor: pointer;
+    color: #8f98a0;
+    border: 1px solid #dad9d9;
+    background: url(../images/selector.jpg) no-repeat right center;
+    background-size: 40px;
+}
+
+.selector .down {
+    position: absolute;
+    z-index: 1;
+    top: 41px;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border: 1px solid #dad9d9;
+    border-top: none;
+    background: #fff;
+}
+
+.selector .down p {
+    line-height: 26px;
+    width: 100%;
+    height: 26px;
+    text-indent: 10px;
+    cursor: pointer;
+    opacity: 1;
+    color: #323232;
+}
+
+.explain {
+    font-size: 12px;
+    color: #36b991;
+    line-height: 16px;
+    margin-left: 220px;
+}
+
+
+/*详细信息*/
+
+.mainright .details {
+    height: 72px;
+    line-height: 72px;
+    margin-bottom: 32px;
+}
+
+.option2 {
+    width: 100%;
+    overflow: hidden;
+}
+
+.option2 span {
+    line-height: 48px;
+    margin-right: 10px;
+}
+
+
+/*上传图片*/
+
+.option2 img {
+    width: 154px;
+    height: 227px;
+    float: left;
+}
+
+.upload-img {
+    float: left;
+    margin-left: 30px;
+}
+
+.upload-img input {
+    width: 89px;
+    height: 32px;
+    background: #ff9d1c;
+    border-radius: 2px;
+    color: #fff;
+    margin-top: 114px;
+}
+
+.upload-img p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/*文本输入框*/
+
+.option2 textarea {
+    display: block;
+    width: 602px;
+    height: 202px;
+    border: 1px solid #dad9d9;
+    padding: 10px 15px;
+}
+
+.synopsis {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+/*发布退出按钮*/
+
+.mainright .release,
+.mainright .quit,
+.success .finish,
+.success .next-step {
+    width: 119px;
+    height: 33px;
+    border-radius: 2px;
+    font-size: 14px;
+    margin-top: 28px;
+}
+
+.mainright .release,
+.success .next-step {
+    background: #36b991;
+    color: #fff;
+    margin-left: 384px;
+}
+
+.mainright .quit,
+.success .finish {
+    border: 1px solid #e7e7e7;
+    margin-left: 36px;
+    color: #666;
+}
+
+
+/*课程发布成功弹窗*/
+
+.masker {
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 34, 32, 32, 0.569);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.success {
+    width: 554px;
+    height: 207px;
+    position: fixed;
+    left: 50%;
+    margin-left: -277px;
+    background: #fff;
+    top: 50%;
+    margin-top: -100px;
+    position: relative;
+}
+
+.success-top {
+    width: 100%;
+    height: 50px;
+    background: #f3f2f2;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.popup-close {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+.success-info {
+    font-size: 14px;
+    color: #36b991;
+    line-height: 90px;
+    text-indent: 52px;
+    height: 90px;
+}
+
+.success-info span {
+    color: #999;
+}
+
+.success .finish {
+margin-top: 0;
+    margin-left: 141px;
+}
+
+.success .next-step {
+    margin-top: 0;
+    margin-left: 36px;
 }

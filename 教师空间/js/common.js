@@ -20,4 +20,33 @@ $(function() {
     $(".dropbox").on("click", function(e) {
         e.stopPropagation();
     });
+    //  下拉框部分js
+    $("body").mousedown(function(e) {
+        if ($(e.target).is('.down')) {
+            return;
+        }
+        $(".down").slideUp("fast");
+    });
+
+    $(".selector .select").click(function() {
+        var obj = $(this);
+        var ul = obj.parents(".selector").find(".down");
+        if (ul.is(":visible")) {
+            ul.slideUp();
+        } else {
+            ul.slideDown();
+        }
+    });
+    $(".down p").mousedown(function() {
+        var obj = $(this);
+        var txt = obj.html();
+        obj.parent().siblings(".select").val(txt);
+        obj.parent().siblings(".select").css("color", "#14263f");
+        obj.parent().hide();
+        obj.css("background", "#c8c8c8").siblings().css("background", "none");
+    });
+    // 开始备课-course-information.html部分js
+    $(".sidebar p").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+    });
 });

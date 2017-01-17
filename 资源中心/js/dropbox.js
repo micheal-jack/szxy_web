@@ -69,4 +69,8 @@ $(function() {
         obj.parent().hide();
         obj.css("background", "#c8c8c8").siblings().css("background", "none");
     });
+
+    $(".diff .select").css({"width":$(".diff .down").width()+2,"background-position":$(".diff .down").width()-20});
+
+
 });

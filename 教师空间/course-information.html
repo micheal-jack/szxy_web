@@ -71,10 +71,125 @@
                     </div>
                 </div>
                 <div class="info-right">
-                    <div id="main"></div>
+                    <!-- <div id="main"></div> -->
+                    <a class="preview" href="javascript:;">预览</a>
+                    <a class="goback" href="javascript:;">返回</a>
+                </div>
+            </div>
+            <!-- 课程内容 -->
+            <div class="main">
+                <!-- 左侧侧边栏 -->
+                <div class="mainleft">
+                    <h3>课程内容</h3>
+                    <div class="sidebar">
+                        <p class="active">课程信息</p>
+                        <p>课时管理</p>
+                        <p>备课资源管理</p>
+                        <p>题目管理</p>
+                    </div>
+                </div>
+                <!-- 右侧内容区 -->
+                <div class="mainright">
+                    <h3>基本信息</h3>
+                    <div class="option">
+                        <span>学段</span>
+                        <input type="radio" name="stage" value="" id="stage1" />
+                        <label for="stage1">小学</label>
+                        <input type="radio" name="stage" value="" id="stage2" />
+                        <label for="stage2">初中</label>
+                        <input type="radio" name="stage" value="" id="stage3" />
+                        <label for="stage3">高中</label>
+                    </div>
+                    <div class="option">
+                        <span>所属年级</span>
+                        <div class="selector">
+                            <input class="select" type="text" placeholder="" value="" readonly/>
+                            <div class="down">
+                                <p>一年级</p>
+                                <p>二年级</p>
+                                <p>三年级</p>
+                                <p>四年级</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <span>学期</span>
+                        <input type="radio" name="term" value="" id="term1" />
+                        <label for="term1">上学期</label>
+                        <input type="radio" name="term" value="" id="term2" />
+                        <label for="term2">下学期</label>
+                    </div>
+                    <div class="option">
+                        <span>科目</span>
+                        <div class="selector">
+                            <input class="select" type="text" placeholder="" value="" readonly/>
+                            <div class="down">
+                                <p>语文</p>
+                                <p>数学</p>
+                                <p>英语</p>
+                                <p>科学</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <span>版本</span>
+                        <div class="selector">
+                            <input class="select" type="text" placeholder="" value="" readonly/>
+                            <div class="down">
+                                <p>人教版</p>
+                                <p>人教版2</p>
+                                <p>人教版3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option">
+                        <span>计划课时数</span>
+                        <input class="input1" type="text">
+                    </div>
+                    <div class="option">
+                        <span>计划互动直播课堂数</span>
+                        <input class="input1" type="text">
+                    </div>
+                    <div class="option">
+                        <span>标签</span>
+                        <input class="input2" type="text">
+                    </div>
+                    <p class="explain">将会应用于按标签搜索课程、相关课程的提取等</p>
+                    <h3 class="details">详细信息</h3>
+                    <div class="option2">
+                        <span>教材封面</span>
+                        <img src="images/textbook.jpg" alt="">
+                        <div class="upload-img">
+                            <input type="button" value="上传图片">
+                            <p>请选择要上传的课程图片</p>
+                        </div>
+                    </div>
+                    <div class="option2 synopsis">
+                        <span>课程简介</span>
+                        <textarea placeholder="请您输入课程简介"></textarea>
+                    </div>
+                    <div class="option2">
+                        <span>课程目标</span>
+                        <textarea placeholder="请您输入课程目标"></textarea>
+                    </div>
+                    <input class="release" type="submit" value="发布">
+                    <input class="quit" type="button" value="退出">
                 </div>
             </div>
         </div>
+    </div>
+   
+    <!-- 黑色遮罩层 -->
+    <div class="masker"></div>
+     <!-- 课程发布成功弹窗 -->
+    <div class="success">
+        <img class="popup-close" src="images/popup-close.jpg" alt="">
+       <p class="success-top">提示</p>
+       <p class="success-info">
+          课程发布成功，点击  <span>下一步</span> 进入课时备课
+       </p>
+       <input class="finish" type="button" value="结束备课">
+       <input class="next-step" type="button" value="下一步">
     </div>
     <!-- 一根横线 -->
     <div class="line"></div>
@@ -114,11 +229,11 @@
             trigger: 'item',
             formatter: "{a} <br/>{b} : {c} ({d}%)"
         },
-        legend: {
-            orient: 'vertical',
-            x: 'left',
-            data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
-        },
+        // legend: {
+        //     orient: 'vertical',
+        //     x: 'left',
+        //     data: ['直接访问', '邮件营销', '联盟广告', '视频广告', '搜索引擎']
+        // },
         toolbox: {
             show: true,
             feature: {
