@@ -46,7 +46,7 @@ $(function() {
         obj.css("background", "#c8c8c8").siblings().css("background", "none");
     });
     // 开始备课-course-information.html部分js
-    $(".sidebar p").click(function(){
+    $(".sidebar a").click(function(){
         $(this).addClass("active").siblings().removeClass("active");
     });
 });

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>开始备课</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/same.css">
+    <link rel="stylesheet" href="css/course-content.css">
+</head>
+
+<body>
+    <!-- 教学准备开始备课 -->
+    <!-- 页面头部 -->
+    <div class="headerwrapper">
+        <div class="header">
+            <p class="welcome">欢迎来到湖北垄上数字学校咸安分校!!</p>
+            <div class="headerright">
+                <!-- 用户未登陆 -->
+                <!-- <a class="login" href="javascript:;">登陆</a> -->
+                <!-- 用户登陆后 -->
+                <div class="user">
+                    <span>李老师</span>
+                    <div class="dropbox">
+                        <a href="javascript:;">修改资料</a>
+                        <a href="javascript:;">修改密码</a>
+                        <a href="javascript:;">设置</a>
+                        <a href="javascript:;">注销</a>
+                    </div>
+                </div>
+                <a class="message" href="javascript:;">
+                    <span class="number">99</span>
+                </a>
+                <a class="email" href="javascript:;"></a>
+            </div>
+        </div>
+    </div>
+    <!-- logo和导航栏部分 -->
+    <div class="nav">
+        <a href="javascript:;">
+            <img class="logo" src="images/logo.jpg">
+        </a>
+        <p class="info">咸安分校</p>
+        <!-- 导航 -->
+        <ul class="navul">
+            <li><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">我的教学</a></li>
+            <li><a href="javascript:;">我的班级</a></li>
+            <li><a href="javascript:;">教学实施</a></li>
+            <li><a href="javascript:;">教学资源</a></li>
+            <li><a href="javascript:;">课外读物</a></li>
+        </ul>
+    </div>
+    <!-- 一根横线 -->
+    <div class="color-line"></div>
+    <!-- 最外层 -->
+    <div class="container">
+        <div class="container-center">
+            <!-- 教师信息 -->
+            <div class="teacher-info">
+                <div class="info-left">
+                    <div class="avatar">
+                        <img src="images/avatar.jpg" alt="">
+                        <p>教师：杨思琦</p>
+                    </div>
+                    <div class="information">
+                        <p>小学一年级语文（上）</p>
+                        <p>人教版2001新课标版</p>
+                        <p>计划总课时：20 </p>
+                    </div>
+                </div>
+                <div class="info-right">
+                    <!-- <div id="main"></div> -->
+                    <a class="preview" href="javascript:;">预览</a>
+                    <a class="goback" href="javascript:;">返回</a>
+                </div>
+            </div>
+            <!-- 课程内容 -->
+            <div class="main">
+                <!-- 左侧侧边栏 -->
+                <div class="mainleft">
+                    <h3>课程内容</h3>
+                    <div class="sidebar">
+                        <a class="active" href="javascript:;">课程信息</a>
+                        <a href="javascript:;">课时管理</a>
+                        <a href="javascript:;">备课资源管理</a>
+                        <a href="javascript:;">题目管理</a>
+                    </div>
+                </div>
+                <!-- 右侧内容区 -->
+                <div class="mainright">
+                    <!--====================== 课程信息 ==============================-->
+                    <div class="course-information">
+                        <h3>基本信息</h3>
+                        <div class="option">
+                            <span>学段</span>
+                            <input type="radio" name="stage" value="" id="stage1" />
+                            <label for="stage1">小学</label>
+                            <input type="radio" name="stage" value="" id="stage2" />
+                            <label for="stage2">初中</label>
+                            <input type="radio" name="stage" value="" id="stage3" />
+                            <label for="stage3">高中</label>
+                        </div>
+                        <div class="option">
+                            <span>所属年级</span>
+                            <div class="selector">
+                                <input class="select" type="text" placeholder="" value="" readonly/>
+                                <div class="down">
+                                    <p>一年级</p>
+                                    <p>二年级</p>
+                                    <p>三年级</p>
+                                    <p>四年级</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <span>学期</span>
+                            <input type="radio" name="term" value="" id="term1" />
+                            <label for="term1">上学期</label>
+                            <input type="radio" name="term" value="" id="term2" />
+                            <label for="term2">下学期</label>
+                        </div>
+                        <div class="option">
+                            <span>科目</span>
+                            <div class="selector">
+                                <input class="select" type="text" placeholder="" value="" readonly/>
+                                <div class="down">
+                                    <p>语文</p>
+                                    <p>数学</p>
+                                    <p>英语</p>
+                                    <p>科学</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <span>版本</span>
+                            <div class="selector">
+                                <input class="select" type="text" placeholder="" value="" readonly/>
+                                <div class="down">
+                                    <p>人教版</p>
+                                    <p>人教版2</p>
+                                    <p>人教版3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="option">
+                            <span>计划课时数</span>
+                            <input class="input1" type="text">
+                        </div>
+                        <div class="option">
+                            <span>计划互动直播课堂数</span>
+                            <input class="input1" type="text">
+                        </div>
+                        <div class="option">
+                            <span>标签</span>
+                            <input class="input2" type="text">
+                        </div>
+                        <p class="explain">将会应用于按标签搜索课程、相关课程的提取等</p>
+                        <h3 class="details">详细信息</h3>
+                        <div class="option2">
+                            <span>教材封面</span>
+                            <img src="images/textbook.jpg" alt="">
+                            <div class="upload-img">
+                                <input type="button" value="上传图片">
+                                <p>请选择要上传的课程图片</p>
+                            </div>
+                        </div>
+                        <div class="option2 synopsis">
+                            <span>课程简介</span>
+                            <textarea placeholder="请您输入课程简介"></textarea>
+                        </div>
+                        <div class="option2">
+                            <span>课程目标</span>
+                            <textarea placeholder="请您输入课程目标"></textarea>
+                        </div>
+                        <input class="release" type="submit" value="发布">
+                        <input class="quit" type="button" value="退出">
+                        <!-- 课程发布成功弹窗 -->
+                        <div class="success">
+                            <!-- 右侧关闭按钮 -->
+                            <span class="popup-close"></span>
+                            <p class="success-top">提示</p>
+                            <p class="success-info">
+                                课程发布成功，点击 <span>下一步</span> 进入课时备课
+                            </p>
+                            <input class="finish" type="button" value="结束备课">
+                            <input class="next-step" type="button" value="下一步">
+                        </div>
+                    </div>
+                    <!--====================== 课时管理 ==============================-->
+                    <div class="class-management">
+                        <div class="class-top">
+                            <span>课时管理</span>
+                            <a class="add" href="javascript:;"><i class="icon-add"></i>增加章</a>
+                        </div>
+                        <!-- 点击添加章按钮时的弹窗 -->
+                        <div class="add-chapter">
+                            <!-- 右侧关闭按钮 -->
+                            <span class="add-close"></span>
+                            <p class="add-top">添加章</p>
+                            <div class="inputbox">
+                                <span>章标题</span>
+                                <input type="text">
+                            </div>
+                            <input class="confirm-add" type="button" value="添加">
+                            <input class="cancel-add" type="button" value="取消">
+                        </div>
+                        <!-- 课时管理排序 -->
+                        <div class="dd" id="nestable">
+                            <ol class="dd-list">
+                                <li class="dd-item" data-id="1">
+                                    <div class="dd-handle">第1章 第一单元 小猫的故事</div>
+                                </li>
+                                <li class="dd-item" data-id="2">
+                                    <div class="dd-handle">第2章 第一单元 唐诗三百首</div>
+                                    <ol class="dd-list">
+                                        <li class="dd-item" data-id="3">
+                                            <div class="dd-handle">李白 静夜思</div>
+                                            <ol class="dd-list">
+                                                <li class="dd-item" data-id="4">
+                                                    <div class="dd-handle">窗前明月光</div>
+                                                </li>
+                                                <li class="dd-item" data-id="5">
+                                                    <div class="dd-handle">疑是地上霜</div>
+                                                </li>
+                                                <li class="dd-item" data-id="6">
+                                                    <div class="dd-handle">举头望明月</div>
+                                                </li>
+                                                <li class="dd-item" data-id="7">
+                                                    <div class="dd-handle">低头思故乡</div>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li class="dd-item" data-id="8">
+                                            <div class="dd-handle">Item 8</div>
+                                        </li>
+                                        <li class="dd-item" data-id="9">
+                                            <div class="dd-handle">Item 9</div>
+                                        </li>
+                                        <li class="dd-item" data-id="10">
+                                            <div class="dd-handle">Item 10</div>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li class="dd-item" data-id="11">
+                                    <div class="dd-handle">Item 11</div>
+                                </li>
+                                <li class="dd-item" data-id="12">
+                                    <div class="dd-handle">Item 12</div>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 黑色遮罩层 -->
+    <div class="masker"></div>
+    <!-- 一根横线 -->
+    <div class="line"></div>
+    <!-- 页面底部 -->
+    <div class="footer">
+        <div class="footleft">
+            <ul class="footul">
+                <li><a href="javascript:;">关于我们</a></li>
+                <li><a href="javascript:;">联系我们</a></li>
+                <li><a href="javascript:;">法律条款</a></li>
+                <li><a href="javascript:;">帮助中心</a></li>
+                <li><a href="javascript:;">意见反馈</a></li>
+            </ul>
+            <p class="copyright">
+                版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有版权所有
+            </p>
+            <p class="technicalsupport">技术支持：中邮世纪（北京）通信技术有限公司</p>
+        </div>
+        <div class="footright">
+            <p class="contact">联系我们</p>
+            <p>地址：湖北省武汉市洪山区珞喻路152号</p>
+            <p>邮政编码：</p>
+            <p>电话：400-111-111</p>
+            <p>E-mail:shuzixuexiao@126.com</p>
+        </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/echarts.js"></script>
+    <script src="js/jquery.nestable.js"></script>
+    <script src="js/course-content.js"></script>
+</body>
+
+</html>

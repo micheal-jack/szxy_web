@@ -1,0 +1,698 @@
+/*开始备课页面css*/
+
+
+/*最外层div*/
+
+.container {
+    width: 100%;
+    background: #f5f5f5;
+}
+
+
+/*中间1220pxdiv*/
+
+.container-center {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.teacher-info {
+    width: 100%;
+    height: 263px;
+    border: 1px solid #e5e4e4;
+    background: #fff;
+}
+
+
+/*左侧头像*/
+
+.info-left {
+    float: left;
+    height: 100%;
+    padding-top: 63px;
+    padding-left: 76px;
+}
+
+.avatar {
+    float: left;
+}
+
+.avatar img {
+    width: 113px;
+    height: 113px;
+    border-radius: 50%;
+}
+
+.avatar p {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.information {
+    float: left;
+    margin-left: 56px;
+}
+
+.information p:nth-child(1) {
+    font-size: 28px;
+    line-height: 48px;
+    color: #333;
+}
+
+.information p:nth-child(2) {
+    font-size: 14px;
+    line-height: 48px;
+}
+
+.information p:nth-child(3) {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+/*右侧饼状图*/
+
+.info-right {
+    position: relative;
+    float: right;
+    padding-top: 30px;
+    padding-right: 21px;
+}
+
+#main {
+    width: 150px;
+    height: 150px;
+}
+
+
+/*预览和返回按钮*/
+
+.preview,
+.goback {
+    font-size: 14px;
+    line-height: 25px;
+    position: absolute;
+    top: 30px;
+    display: block;
+    width: 85px;
+    height: 25px;
+    color: #333;
+    border: 1px solid #ededed;
+    border-radius: 2px;
+}
+
+.preview {
+    right: 113px;
+    text-indent: 40px;
+    background: url(../images/preview.jpg) no-repeat 15px center;
+}
+
+.goback {
+    right: 21px;
+    text-indent: 36px;
+    background: #f3f3f3 url(../images/go-back.jpg) no-repeat 19px center;
+}
+
+
+/*******************************课程内容************************************/
+
+.main {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.mainleft {
+    float: left;
+    width: 270px;
+    background: #fff;
+}
+
+.mainleft h3 {
+    font-size: 24px;
+    line-height: 85px;
+    width: 100%;
+    height: 85px;
+    margin-bottom: 2px;
+    text-align: center;
+    color: #fff;
+    background: #36b991;
+}
+
+.sidebar a {
+    font-size: 18px;
+    line-height: 65px;
+    display: block;
+    height: 66px;
+    text-indent: 80px;
+    color: #333;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar .active {
+    text-indent: 78px;
+    color: #36b991;
+    border-left: 2px solid #36b991;
+}
+
+.mainright {
+    float: right;
+    width: 929px;
+    padding-bottom: 120px;
+    background: #fff;
+}
+
+.course-information {
+    display: none;
+}
+
+.course-information h3 {
+    font-size: 16px;
+    line-height: 88px;
+    width: 95%;
+    height: 88px;
+    margin: 0 auto;
+    text-indent: 30px;
+    color: #333;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.course-information .option {
+    line-height: 60px;
+    height: 60px;
+}
+
+.option span,
+.option2 span {
+    font-size: 14px;
+    display: block;
+    float: left;
+    width: 208px;
+    text-align: right;
+}
+
+.option .input1,
+.option .input2 {
+    height: 42px;
+    margin-left: 14px;
+    padding-left: 10px;
+    border: 1px solid #dad9d9;
+}
+
+.option .input1 {
+    width: 165px;
+}
+
+.option .input2 {
+    width: 596px;
+}
+
+
+/*复选框css部分*/
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio] + label {
+    display: inline-block;
+    height: 55px;
+    margin-left: 20px;
+    padding-left: 27px;
+    cursor: pointer;
+    background: url(../images/nochecked.jpg) no-repeat left center;
+    background-size: 14px;
+}
+
+input[type=radio]:checked + label {
+    background-image: url(../images/checked.jpg);
+}
+
+
+/*下拉框代码*/
+
+.selector {
+    font-size: 14px;
+    position: relative;
+    float: left;
+    width: 165px;
+    height: 42px;
+    margin-top: 7px;
+    margin-left: 14px;
+}
+
+.selector .select {
+    font-size: 14px;
+    line-height: 26px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-indent: 10px;
+    color: #8f98a0;
+    border: 1px solid #dad9d9;
+    background: url(../images/selector.jpg) no-repeat right center;
+    background-size: 40px;
+}
+
+.selector .down {
+    position: absolute;
+    z-index: 1;
+    top: 41px;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border: 1px solid #dad9d9;
+    border-top: none;
+    background: #fff;
+}
+
+.selector .down p {
+    line-height: 26px;
+    width: 100%;
+    height: 26px;
+    cursor: pointer;
+    text-indent: 10px;
+    opacity: 1;
+    color: #323232;
+}
+
+.explain {
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 220px;
+    color: #36b991;
+}
+
+
+/*详细信息*/
+
+.course-information .details {
+    line-height: 72px;
+    height: 72px;
+    margin-bottom: 32px;
+}
+
+.option2 {
+    overflow: hidden;
+    width: 100%;
+}
+
+.option2 span {
+    line-height: 48px;
+    margin-right: 10px;
+}
+
+
+/*上传图片*/
+
+.option2 img {
+    float: left;
+    width: 154px;
+    height: 227px;
+}
+
+.upload-img {
+    float: left;
+    margin-left: 30px;
+}
+
+.upload-img input {
+    width: 89px;
+    height: 32px;
+    margin-top: 114px;
+    color: #fff;
+    border-radius: 2px;
+    background: #ff9d1c;
+}
+
+.upload-img p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+/*文本输入框*/
+
+.option2 textarea {
+    display: block;
+    width: 602px;
+    height: 202px;
+    padding: 10px 15px;
+    border: 1px solid #dad9d9;
+}
+
+.synopsis {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+
+/*发布退出按钮*/
+
+.course-information .release,
+.course-information .quit,
+.success .finish,
+.success .next-step,
+.confirm-add,
+.cancel-add {
+    font-size: 14px;
+    width: 119px;
+    height: 33px;
+    margin-top: 28px;
+    border-radius: 2px;
+}
+
+.course-information .release,
+.success .next-step,
+.cancel-add {
+    margin-left: 384px;
+    color: #fff;
+    background: #36b991;
+}
+
+.course-information .quit,
+.success .finish,
+.confirm-add {
+    margin-left: 36px;
+    color: #666;
+    border: 1px solid #e7e7e7;
+}
+
+
+/*课程发布成功弹窗*/
+
+.masker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 34, 32, 32, .569);
+}
+
+.success,
+.add-chapter {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 554px;
+    height: 207px;
+    margin-top: -100px;
+    margin-left: -277px;
+    background: #fff;
+}
+
+.success-top,
+.add-top {
+    font-size: 18px;
+    line-height: 50px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #333;
+    background: #f3f2f2;
+}
+
+.popup-close,
+.add-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 51px;
+    height: 51px;
+    cursor: pointer;
+    background: url(../images/popup-close.jpg) no-repeat 22px;
+}
+
+.success-info {
+    font-size: 14px;
+    line-height: 90px;
+    height: 90px;
+    text-indent: 52px;
+    color: #36b991;
+}
+
+.success-info span {
+    color: #999;
+}
+
+.success .finish {
+    margin-top: 0;
+    margin-left: 141px;
+}
+
+.success .next-step {
+    margin-top: 0;
+    margin-left: 36px;
+}
+
+
+/*************************************课时管理*************************************/
+
+.class-top {
+    font-size: 18px;
+    line-height: 86px;
+    width: 100%;
+    height: 86px;
+    text-indent: 20px;
+    color: #333;
+}
+
+.class-top .add {
+    font-size: 16px;
+    line-height: 33px;
+    display: block;
+    float: right;
+    width: 117px;
+    height: 33px;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-indent: 11px;
+    color: #fff;
+    border-radius: 2px;
+    background: #ff7200;
+}
+
+.icon-add {
+    display: block;
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin: 10px 0 0 20px;
+    background: url(../images/icon-add.png);
+}
+
+
+/*管理排序部分*/
+
+.dd {
+    font-size: 14px;
+    line-height: 36px;
+    position: relative;
+    display: block;
+    margin-right: 20px;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.dd-list {
+    position: relative;
+    display: block;
+    list-style: none;
+}
+
+.dd-list .dd-list {
+    padding-left: 46px;
+}
+
+.dd-collapsed .dd-list {
+    display: none;
+}
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+    font-size: 13px;
+    line-height: 40px;
+    position: relative;
+    display: block;
+    min-height: 40px;
+}
+
+.dd-handle {
+    font-weight: bold;
+    line-height: 36px;
+    display: block;
+    height: 36px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    text-indent: 15px;
+    color: #333;
+    border: 1px solid #e5e4e4;
+}
+
+.dd-handle:hover {
+    color: #2ea8e5;
+}
+
+.dd > .dd-list > .dd-item > .dd-handle {
+    height: 40px;
+    background: #f9f9f9;
+}
+
+.dd > .dd-list > .dd-item > button {
+    width: 40px;
+    height: 40px;
+    background: #36b991;
+}
+
+.dd > .dd-list > .dd-item > button:before {
+    top: 2px;
+    left: 2px;
+}
+
+.dd-item > button {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+    position: relative;
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+    text-indent: 100%;
+    border: 0;
+    background: #6fb3e0;
+}
+
+.dd-item > button:before {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 36px;
+    height: 36px;
+    content: url(../images/spread.png);
+    text-align: center;
+    text-indent: 0;
+}
+
+.dd-item > button[data-action='collapse']:before {
+    content: url(../images/fold.png);
+}
+
+.dd-placeholder,
+.dd-empty {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    min-height: 30px;
+    margin: 5px 0;
+    padding: 0;
+    border: 1px dashed #b6bcbf;
+    background: #f2fbff;
+}
+
+.dd-empty {
+    min-height: 100px;
+    border: 1px dashed #bbb;
+    background-color: #e5e5e5;
+    background-image: -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), -webkit-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    background-image: -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), -moz-linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    background-image: linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff), linear-gradient(45deg, #fff 25%, transparent 25%, transparent 75%, #fff 75%, #fff);
+    background-position: 0 0, 30px 30px;
+    background-size: 60px 60px;
+}
+
+.dd-dragel {
+    position: absolute;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.dd-dragel > .dd-item .dd-handle {
+    margin-top: 0;
+}
+
+.dd-dragel .dd-handle {
+    -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
+    box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
+}
+
+
+/*点击添加章节时出现的弹窗*/
+
+/*.add-chapter,
+.masker {
+    display: block;
+}
+*/
+.inputbox {
+    overflow: hidden;
+    height: 38px;
+    margin-top: 24px;
+}
+
+.inputbox span {
+    line-height: 38px;
+    display: block;
+    float: left;
+    width: 116px;
+    text-indent: 53px;
+}
+
+.inputbox input {
+    float: left;
+    width: 386px;
+    height: 38px;
+    padding-left: 10px;
+    border: 1px solid #e7e7e7;
+}
+
+.confirm-add {
+    margin-left: 141px;
+}
+
+.cancel-add {
+    margin-left: 36px;
+}
+
+
+/*当屏幕中间显示区域兼容到980px时*/
+
+@media screen and (max-width: 1024px) {
+    .info-left {
+        padding-left: 30px;
+    }
+    .information {
+        margin-left: 30px;
+    }
+    .container-center {
+        width: 980px;
+    }
+    .mainright {
+        width: 730px;
+    }
+    .option span,
+    .option2 span {
+        width: 150px;
+    }
+    .option .input2 {
+        width: 504px;
+    }
+    .option2 textarea {
+        width: 508px;
+    }
+    .course-information .release {
+        margin-left: 230px;
+    }
+}
