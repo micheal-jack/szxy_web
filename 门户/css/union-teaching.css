@@ -297,6 +297,21 @@
     text-indent: 2em;
 }
 
+
+/*分校简介不同部分*/
+
+.campus {
+    font-size: 28px;
+    line-height: 115px;
+    height: 86px;
+    text-align: center;
+    color: #333;
+}
+
+.profile {
+    padding-bottom: 50px;
+}
+
 @media screen and (min-width: 1024px) {
     .container {
         width: 1220px;

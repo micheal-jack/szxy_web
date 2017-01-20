@@ -45,8 +45,12 @@ $(function() {
         obj.parent().hide();
         obj.css("background", "#c8c8c8").siblings().css("background", "none");
     });
-    // 开始备课-course-information.html部分js
+    // 开始备课-course-information.html左侧侧边栏切换js
     $(".sidebar a").click(function(){
         $(this).addClass("active").siblings().removeClass("active");
+    });
+    // 我的教学-my-teaching.html 左侧侧边栏切换js
+    $(".mldiv a").click(function(){
+        $(this).addClass("selected").siblings().removeClass("selected");
     });
 });

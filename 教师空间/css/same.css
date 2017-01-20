@@ -154,6 +154,10 @@
     height: 100%;
 }
 
+.navul .active {
+    color: #f25719;
+}
+
 .navul li a {
     line-height: 24px;
     margin-right: 24px;

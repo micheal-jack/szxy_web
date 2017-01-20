@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>首页</title>
+    <title>我的教学</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/same.css">
     <link rel="stylesheet" href="css/my-teaching.css">
@@ -43,7 +43,7 @@
         <p class="info">咸安分校</p>
         <!-- 导航 -->
         <ul class="navul">
-            <li><a href="javascript:;">首页</a></li>
+            <li><a class="active" href="javascript:;">首页</a></li>
             <li><a href="javascript:;">我的教学</a></li>
             <li><a href="javascript:;">我的班级</a></li>
             <li><a href="javascript:;">教学实施</a></li>
@@ -65,14 +65,16 @@
         </div>
     </div>
     <div class="main">
-        <ul class="mainleft clearfix">
-            <li class="ml-title">我的教学</li>
-            <li><a href="javascript:;">我的课表</a></li>
-            <li><a href="javascript:;">教学准备</a></li>
-            <li><a href="javascript:;">教学评价</a></li>
-            <li><a href="javascript:;">在线问答</a></li>
-        </ul>
-        <div class="mainright clearfix">
+        <div class="mainleft">
+            <h3 class="ml-title">我的教学</h3>
+            <div class="mldiv">
+                <a class="selected" href="javascript:;"><i class="icon1"></i>我的课表</a>
+                <a href="javascript:;"><i class="icon2"></i>教学准备</a>
+                <a href="javascript:;"><i class="icon3"></i>教学评价</a>
+                <a href="javascript:;"><i class="icon4"></i>在线问答</a>
+            </div>
+        </div>
+        <div class="mainright">
             <div class="mr-top">
                 <p>我的课表</p>
             </div>
@@ -95,7 +97,8 @@
                     <td>星期五</td>
                 </tr>
                 <tr>
-                    <td class="hui am" rowspan="3">上<br>午</td>
+                    <td class="hui am" rowspan="3">上
+                        <br>午</td>
                     <td class="number">1</td>
                     <td class="time-slot">08:00-08:40</td>
                     <td></td>
@@ -141,7 +144,8 @@
                     <td></td>
                 </tr>
                 <tr>
-                    <td class="hui" rowspan="3">下<br>午</td>
+                    <td class="hui" rowspan="3">下
+                        <br>午</td>
                     <td>4</td>
                     <td>11:10-11:50</td>
                     <td>

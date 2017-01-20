@@ -21,7 +21,6 @@
 .main-left {
     float: left;
     width: 260px;
-    /*height: 584px;*/
     margin-top: -33px;
     border: 1px solid #e7e7e7;
 }
@@ -476,6 +475,53 @@
     cursor: pointer;
     color: #fff;
     background: #ff9d1c;
+}
+
+.masker {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 34, 32, 32, .569);
+}
+
+.apply-successful {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: none;
+    width: 450px;
+    height: 186px;
+    margin-top: -93px;
+    margin-left: -225px;
+    background: #fff;
+}
+
+.as-p1 {
+    line-height: 42px;
+    height: 42px;
+    text-indent: 27px;
+    background: #f5f5f5;
+}
+
+.as-p2 {
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+    color: #333;
+}
+
+.confirmbtn {
+    font-size: 16px;
+    display: block;
+    width: 139px;
+    height: 34px;
+    margin: 22px auto 0;
+    color: #fff;
+    border-radius: 16px;
+    background-color: rgb( 251, 69, 0);
 }
 
 

@@ -32,4 +32,5 @@ $(function() {
     $(".cancel-add,.add-close").click(function(){
         $(".masker, .add-chapter").hide();
     });
+    $(".sidebar a")
 });

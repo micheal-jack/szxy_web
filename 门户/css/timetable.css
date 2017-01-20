@@ -198,8 +198,105 @@
     background: #6fb3e0;
 }
 
+
+/*重置密码页面css*/
+
+.wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 562px;
+    background: #c5e6f3;
+}
+
+.reset-center {
+    width: 1220px;
+    height: 515px;
+    margin: 22px auto 0;
+    background: #daeff7;
+}
+
+
+/*重置密码说明*/
+
+.rc-title {
+    font-size: 18px;
+    line-height: 56px;
+    height: 56px;
+    margin-bottom: 70px;
+    text-indent: 38px;
+    color: #999;
+    border-bottom: 1px solid #fff;
+    background: #e8f5fa;
+}
+
+.inputbox {
+    width: 100%;
+    height: 36px;
+    margin-bottom: 13px;
+}
+
+.no-marginbottom {
+    margin-bottom: 0;
+}
+
+
+/*输入框左侧说明文字*/
+
+.inputbox span {
+    line-height: 36px;
+    display: block;
+    float: left;
+    width: 42%;
+    text-align: right;
+}
+
+.inputbox input[type=text] {
+    float: left;
+    width: 220px;
+    height: 36px;
+    padding-left: 12px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+
+/*填写验证码输入框*/
+
+.reset-center .inputbox .code {
+    width: 101px;
+}
+
+
+/*获取验证码按钮*/
+
+.inputbox .get-code {
+    font-size: 12px;
+    width: 106px;
+    height: 35px;
+    margin-left: 13px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: rgb( 255, 129, 64);
+}
+
+
+/*立即保存按钮*/
+
+.save-password {
+    font-size: 12px;
+    display: block;
+    width: 220px;
+    height: 38px;
+    margin-top: 17px;
+    margin-left: 42%;
+    color: #fff;
+    border-radius: 2px;
+    background: #ff8140;
+}
+
 @media screen and (max-width: 1024px) {
-    .container {
+    .container,
+    .reset-center {
         width: 980px;
     }
 }

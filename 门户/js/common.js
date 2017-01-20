@@ -81,6 +81,11 @@ $(function() {
         $(this).addClass("choose").siblings().removeClass("choose");
         $(".activitywrapper > div").hide().eq(_$this).show()
     });
+    
+    // 活动进行中页面报名成功弹窗js
+    $(".confirmbtn").click(function() {
+        $(".masker,.apply-successful").hide();
+    });
 
     // 家校互动-我要提问部分
     $(".quizbtn").click(function() {

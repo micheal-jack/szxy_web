@@ -56,15 +56,54 @@
     background: #36b991;
 }
 
-.mainleft li {
+.mldiv a {
+    display: block;
     font-size: 18px;
     line-height: 76px;
     height: 76px;
-    text-indent: 87px;
+    text-indent: 30px;
     color: #333;
     border-top: 1px solid #e7e7e7;
 }
+.mldiv .selected {
+    color: #36b991;
+}
+.mldiv a i {
+    width: 26px;
+    height: 26px;
+    display: block;
+    margin-top: 24px;
+    margin-left: 30px;
+    float: left;
+}
 
+.mldiv .icon1 {
+    background: url(../images/teaching1.png);
+}
+
+.mldiv .icon2 {
+    background: url(../images/teaching2.png);
+}
+
+.mldiv .icon3 {
+    background: url(../images/teaching3.png);
+}
+
+.mldiv .icon4 {
+    background: url(../images/teaching4.png);
+}
+.mldiv .selected .icon1 {
+    background:url(../images/teaching1-active.png);
+}
+.mldiv .selected .icon2 {
+    background:url(../images/teaching2-active.png);
+}
+.mldiv .selected .icon3 {
+    background:url(../images/teaching3-active.png);
+}
+.mldiv .selected .icon4 {
+    background:url(../images/teaching4-active.png);
+}
 .mainright {
     float: right;
     width: 930px;
