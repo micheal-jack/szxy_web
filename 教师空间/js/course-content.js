@@ -16,21 +16,31 @@ $(function() {
     // output initial serialised data
     updateOutput($('#nestable').data('output', $('#nestable-output')));
 
-    $('#nestable-menu').on('click', function(e) {
-        var target = $(e.target),
-            action = target.data('action');
-        if (action === 'expand-all') {
-            $('.dd').nestable('expandAll');
-        }
-        if (action === 'collapse-all') {
-            $('.dd').nestable('collapseAll');
-        }
-    });
-    $(".add").click(function(){
+    // $('#nestable-menu').on('click', function(e) {
+    //     var target = $(e.target),
+    //         action = target.data('action');
+    //     if (action === 'expand-all') {
+    //         $('.dd').nestable('expandAll');
+    //     }
+    //     if (action === 'collapse-all') {
+    //         $('.dd').nestable('collapseAll');
+    //     }
+    // });
+
+
+
+    $(".add").click(function() {
         $(".masker, .add-chapter").show();
     });
-    $(".cancel-add,.add-close").click(function(){
+    $(".cancel-add,.add-close").click(function() {
         $(".masker, .add-chapter").hide();
     });
-    $(".sidebar a")
+    $(".manage").mousedown(function(o) {
+        o.stopPropagation();
+    });
+
+
+    // tooltip插件部分js
+    $("[data-toggle='tooltip']").tooltip();
+    $(".tooltip").show();
 });

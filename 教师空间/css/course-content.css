@@ -627,15 +627,67 @@ input[type=radio]:checked + label {
     -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
     box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
 }
+/*列表右侧管理按钮*/
+.manage {
+    width: 154px;
+    height: 100%;
+    float: right;
+    display: block;
+    border-left: 1px solid #e5e4e4;
+    background: #e9e9e9;
+}
+
+.manage > a {
+    height: 100%;
+    float: left;
+}
+.manage .m-append {
+    width: 16px;
+    height: 16px;
+    margin-left: 26px;
+    margin-top: 12px;
+}
+.manage .m-edit {
+    width: 17px;
+    height: 17px;
+    margin: 11px 28px 0 30px;
+}
+.manage .m-more {
+    width: 16px;
+    height: 10px;
+    margin-top: 16px;
+}
+.manage i {
+    display: block;
+}
+
+.icon-append {
+    width:16px;
+    height: 16px;
+    background: url(../images/icon-append.png) no-repeat;
+
+
+}
+.icon-edit {
+    width:17px;
+    height: 17px;
+    background: url(../images/icon-edit.png) no-repeat;
+
+
+}
+.icon-more {
+    width: 16px;
+    height: 10px;
+    background: url(../images/icon-more.png) no-repeat;
+}
+.tooltip {
+    display: block!important;
+}
+
 
 
 /*点击添加章节时出现的弹窗*/
 
-/*.add-chapter,
-.masker {
-    display: block;
-}
-*/
 .inputbox {
     overflow: hidden;
     height: 38px;
