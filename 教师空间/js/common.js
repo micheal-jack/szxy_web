@@ -48,9 +48,21 @@ $(function() {
     // 开始备课-course-information.html左侧侧边栏切换js
     $(".sidebar a").click(function(){
         $(this).addClass("active").siblings().removeClass("active");
+        var index = $(this).index();
+        $(".mainright > div").eq(index).show().siblings().hide();
     });
     // 我的教学-my-teaching.html 左侧侧边栏切换js
     $(".mldiv a").click(function(){
         $(this).addClass("selected").siblings().removeClass("selected");
+        var index = $(this).index();
+        $(".mainright > div").eq(index).show().siblings().hide();
+    });
+
+
+    // 我的教学页面--教学准备部分js
+    $(".teaching-prepare .tab span").click(function(){
+        $(this).addClass("active").siblings().removeClass("active");
+        var index = $(this).index();
+        $(".course-tab > div").eq(index).show().siblings().hide();
     });
 });

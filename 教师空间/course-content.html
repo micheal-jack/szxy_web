@@ -196,7 +196,7 @@
                             <a class="add" href="javascript:;"><i class="icon-add"></i>增加章</a>
                         </div>
                         <!-- 点击添加章按钮时的弹窗 -->
-                        <div class="add-chapter">
+                        <div class="add-chapter cm-popup">
                             <!-- 右侧关闭按钮 -->
                             <span class="add-close"></span>
                             <p class="add-top">添加章</p>
@@ -212,10 +212,33 @@
                             <ol class="dd-list">
                                 <li class="dd-item" data-id="1">
                                     <div class="dd-handle">第1章 第一单元 小猫的故事
+                                        <!-- 右侧菜单 -->
                                         <div class="manage">
-                                            <a class="m-append" data-toggle="tooltip" title="nihao" href="javascript:;"><i class="icon-append"></i></a>
-                                            <a class="m-edit" data-toggle="tooltip" title="nihao" href="javascript:;"><i class="icon-edit"></i></a>
-                                            <a class="m-more" data-toggle="tooltip" title="nihao" href="javascript:;"><i class="icon-more"></i></a>
+                                            <!-- 添加 -->
+                                            <a class="m-append" href="javascript:;">
+                                                <i class="icon-append"></i>
+                                                <div class="prompt">添加</div>
+                                                <div class="dropdown">
+                                                    <p class="dd-option" href="http://baidu.com">
+                                                        <i class="icon-add2"></i>下级目录
+                                                    </p>
+                                                    <p class="dd-option"><i class="icon-add2"></i>课程内容</p>
+                                                </div>
+                                            </a>
+                                            <!-- 编辑 -->
+                                            <a class="m-edit" data-toggle="tooltip" title="nihao" href="javascript:;">
+                                                <i class="icon-edit"></i>
+                                                <div class="prompt">编辑</div>
+                                            </a>
+                                            <!-- 更多 -->
+                                            <a class="m-more" data-toggle="tooltip" title="nihao" href="javascript:;">
+                                                <i class="icon-more"></i>
+                                                <div class="prompt">更多</div>
+                                                <div class="dropdown">
+                                                    <p class="dd-option"><i class="icon-add2"></i>预览</p>
+                                                    <p class="dd-option"><i class="icon-add2"></i>发布</p>
+                                                </div>
+                                            </a>
                                         </div>
                                     </div>
                                 </li>
@@ -258,6 +281,18 @@
                                 </li>
                             </ol>
                         </div>
+                        <!-- 点击编辑之后出现的弹窗 -->
+                        <div class="edit-popup cm-popup">
+                            <!-- 右侧关闭按钮 -->
+                            <span class="add-close"></span>
+                            <p class="add-top">编辑</p>
+                            <div class="inputbox">
+                                <span>名称</span>
+                                <input type="text">
+                            </div>
+                            <input class="confirm-add" type="button" value="添加">
+                            <input class="cancel-add" type="button" value="取消">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -296,7 +331,6 @@
     <script src="js/echarts.js"></script>
     <script src="js/jquery.nestable.js"></script>
     <script src="js/course-content.js"></script>
-
 </body>
 
 </html>

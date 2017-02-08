@@ -57,24 +57,26 @@
 }
 
 .mldiv a {
-    display: block;
     font-size: 18px;
     line-height: 76px;
+    display: block;
     height: 76px;
     text-indent: 30px;
     color: #333;
     border-top: 1px solid #e7e7e7;
 }
+
 .mldiv .selected {
     color: #36b991;
 }
+
 .mldiv a i {
+    display: block;
+    float: left;
     width: 26px;
     height: 26px;
-    display: block;
     margin-top: 24px;
     margin-left: 30px;
-    float: left;
 }
 
 .mldiv .icon1 {
@@ -92,18 +94,23 @@
 .mldiv .icon4 {
     background: url(../images/teaching4.png);
 }
+
 .mldiv .selected .icon1 {
-    background:url(../images/teaching1-active.png);
+    background: url(../images/teaching1-active.png);
 }
+
 .mldiv .selected .icon2 {
-    background:url(../images/teaching2-active.png);
+    background: url(../images/teaching2-active.png);
 }
+
 .mldiv .selected .icon3 {
-    background:url(../images/teaching3-active.png);
+    background: url(../images/teaching3-active.png);
 }
+
 .mldiv .selected .icon4 {
-    background:url(../images/teaching4-active.png);
+    background: url(../images/teaching4-active.png);
 }
+
 .mainright {
     float: right;
     width: 930px;
@@ -313,6 +320,171 @@
     background: #6fb3e0;
 }
 
+
+/*教学准备部分css*/
+
+.teaching-prepare {
+    display: none;
+}
+
+.tab {
+    width: 256px;
+    height: 38px;
+    margin: 20px 0 20px 20px;
+    border-radius: 19px;
+    background: #f8f8f8;
+}
+
+.tab .active {
+    color: #fff;
+    background: #36b991;
+}
+
+.tab span {
+    line-height: 38px;
+    display: block;
+    float: left;
+    width: 128px;
+    text-align: center;
+    color: #333;
+    border-radius: 19px;
+}
+
+
+/*在教课程部分css*/
+
+
+
+.course-onging,
+.course-end {
+    display: none;
+    overflow: hidden;
+    padding: 0 30px;
+    border: 1px solid #e7e7e7;
+}
+
+.course-end {
+    border-bottom: none;
+}
+
+.course-onging {
+    display: block;
+}
+
+.course-list {
+    width: 100%;
+    height: 303px;
+    padding-top: 22px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.course-list:last-child {
+    border-bottom: none;
+}
+
+.cr-left {
+    float: left;
+    width: 195px;
+    height: 246px;
+}
+
+.cr-right {
+    float: left;
+    width: 635px;
+    margin-left: 34px;
+}
+
+.cr-right p,
+.cel-right p {
+    font-size: 14px;
+    line-height: 34px;
+}
+
+.cr-right p span {
+    margin-right: 30px;
+}
+
+.cr-right p span:last-child {
+    margin-right: 0;
+}
+
+.cr-right .crr-title,
+.cel-right .celr-title {
+    font-size: 16px;
+    margin-top: 26px;
+    color: #333;
+}
+
+.cr-right .red {
+    font-style: normal;
+    color: #e82633;
+}
+
+.start-prepare {
+    font-size: 14px;
+    line-height: 36px;
+    display: block;
+    float: right;
+    width: 124px;
+    height: 36px;
+    text-align: center;
+    color: #fff;
+    border-radius: 2px;
+    background: #f25719;
+}
+
+.view-course {
+    font-size: 14px;
+    line-height: 38px;
+    display: block;
+    float: right;
+    width: 126px;
+    height: 38px;
+    margin-left: 28px;
+    text-align: center;
+    color: #999;
+    border: 1px solid #a0a0a0;
+}
+
+
+/*已教课程*/
+
+.course-end-list {
+    float: left;
+    width: 50%;
+    height: 303px;
+    padding-top: 22px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.cel-left {
+    float: left;
+    width: 195px;
+    height: 246px;
+}
+
+.cel-right {
+    float: left;
+    width: 200px;
+    margin-left: 32px;
+}
+
+.cel-right .start-prepare,
+.cel-right .view-course {
+    float: left;
+    margin-top: 16px;
+    margin-left: 0;
+}
+
+.bottom-line {
+    clear: both;
+    width: 100%;
+    height: 1px;
+    margin-top: -1px;
+    background: #e7e7e7;
+    margin-bottom: 46px;
+}
+
 @media screen and (max-width: 1024px) {
     .banner,
     .main {
@@ -320,5 +492,23 @@
     }
     .mainright {
         width: 688px;
+    }
+    .course-onging,
+    .course-end {
+        padding: 0 10px;
+    }
+    .course-end-list {
+        height: 260px;
+    }
+    .cr-right {
+        width: 436px;
+    }
+    .cel-right {
+        width: 160px;
+        margin-left: 10px;
+    }
+    .cel-left {
+        width: 162px;
+        height: 204px;
     }
 }
