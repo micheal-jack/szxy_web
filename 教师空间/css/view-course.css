@@ -1,0 +1,231 @@
+/*主题左侧div*/
+
+.left-div {
+    width: 930px;
+    height: auto;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+    float: left;
+}
+
+.ld-tab {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.ld-tab .active {
+    margin-top: -1px;
+    color: #f34c00;
+    border-top: 4px solid #f34c00;
+    line-height: 44px;
+}
+
+.ld-tab a {
+    font-size: 16px;
+    line-height: 50px;
+    float: left;
+    width: 147px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    color: #6d6d6d;
+    border-right: 1px solid #ddd;
+}
+
+
+/*课程信息部分css*/
+
+.course-info {
+    width: 100%;
+    padding: 0 35px 140px;
+}
+
+.course-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 32px;
+}
+
+.course-info .ci-title {
+    margin-top: 40px;
+    color: #333;
+}
+
+.course-info .textindent2em {
+    text-indent: 2em;
+}
+
+.course-info .ci-title span {
+    color: #e60012;
+}
+
+
+/*主体右侧div*/
+
+.right-div {
+    float: right;
+    width: 270px;
+}
+
+
+/*课程公告部分*/
+
+.course-notice {
+    width: 100%;
+    height: 280px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+}
+
+.cn-title {
+    height: 51px;
+    line-height: 50px;
+    border-bottom: 1px solid #e7e7e7;
+    text-indent: 30px;
+    color: #333;
+}
+
+.cn-title a {
+    font-size: 14px;
+    color: #f25719;
+    margin-left: 90px;
+}
+
+.cn-text {
+    padding: 20px 28px 0;
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.cn-manage {
+    overflow: hidden;
+}
+
+.cn-manage a {
+    font-size: 12px;
+    color: #999;
+    float: right;
+    width: 50px;
+    display: block;
+}
+
+.cn-manage i {
+    display: block;
+    float: left;
+    margin-right: 5px;
+}
+
+.cn-manage .delete {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.icon-modify {
+    width: 17px;
+    height: 16px;
+    background: url(../images/icon-modify.png);
+}
+
+.icon-delete {
+    width: 13px;
+    height: 15px;
+    background: url(../images/icon-delete.png);
+}
+
+.modify-notice {
+    width: 100%;
+    padding: 15px 20px 0;
+}
+
+.modify-notice textarea {
+    width: 229px;
+    height: 126px;
+    border: 1px solid #e7e7e7;
+    padding: 10px;
+}
+
+
+/*css部分*/
+
+.if-notify {
+    display: none;
+}
+
+.if-notify + label {
+    background: #999;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+}
+
+.if-notify:checked + label {
+    background: #0080FF;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    padding: 0 0 0 0px;
+}
+
+
+/*学习进度部分css*/
+
+.learning-rate {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    background: #fff;
+}
+
+.rate-ul {
+    width: 212px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+}
+
+.rate-list {
+    height: 86px;
+    width: 100%;
+    padding-top: 13px;
+}
+
+.rl-avatar {
+    width: 63px;
+    height: 63px;
+    float: left;
+}
+
+.rl-right {
+    float: right;
+    width: 132px;
+}
+
+.rlr-name {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.rlr-progress {
+    font-size: 12px;
+    color: #999;
+}
+
+
+/*进度条*/
+
+.progress {
+    width: 100%;
+    height: 5px;
+    background: #e7f6f7;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+.progress-inner {
+    height: 5px;
+    width: 50%;
+    background: #f8b551;
+    border-radius: 3px;
+}

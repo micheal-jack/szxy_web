@@ -46,13 +46,13 @@ $(function() {
         obj.css("background", "#c8c8c8").siblings().css("background", "none");
     });
     // 开始备课-course-information.html左侧侧边栏切换js
-    $(".sidebar a").click(function(){
+    $(".sidebar a").click(function() {
         $(this).addClass("active").siblings().removeClass("active");
         var index = $(this).index();
         $(".mainright > div").eq(index).show().siblings().hide();
     });
     // 我的教学-my-teaching.html 左侧侧边栏切换js
-    $(".mldiv a").click(function(){
+    $(".mldiv a").click(function() {
         $(this).addClass("selected").siblings().removeClass("selected");
         var index = $(this).index();
         $(".mainright > div").eq(index).show().siblings().hide();
@@ -60,9 +60,25 @@ $(function() {
 
 
     // 我的教学页面--教学准备部分js
-    $(".teaching-prepare .tab span").click(function(){
+    $(".teaching-prepare .tab span").click(function() {
         $(this).addClass("active").siblings().removeClass("active");
         var index = $(this).index();
         $(".course-tab > div").eq(index).show().siblings().hide();
     });
+
+});
+// 查看课程页面
+$(function() {
+    // tab切换部分js
+    $(".ld-tab a").click(function() {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+
+    $(".rate-ul .rate-list").each(function() {
+        var line = $(this).find(".progress-inner");
+        var percent = $(this).find(".rlr-progress").text().replace(/[^0-9]/ig, "");
+        console.log(percent);
+        line.css("width", percent + "%");
+    });
+
 });

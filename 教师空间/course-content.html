@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/same.css">
     <link rel="stylesheet" href="css/course-content.css">
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 </head>
 
 <body>
@@ -195,18 +194,6 @@
                             <span>课时管理</span>
                             <a class="add" href="javascript:;"><i class="icon-add"></i>增加章</a>
                         </div>
-                        <!-- 点击添加章按钮时的弹窗 -->
-                        <div class="add-chapter cm-popup">
-                            <!-- 右侧关闭按钮 -->
-                            <span class="add-close"></span>
-                            <p class="add-top">添加章</p>
-                            <div class="inputbox">
-                                <span>章标题</span>
-                                <input type="text">
-                            </div>
-                            <input class="confirm-add" type="button" value="添加">
-                            <input class="cancel-add" type="button" value="取消">
-                        </div>
                         <!-- 课时管理排序 -->
                         <div class="dd" id="nestable">
                             <ol class="dd-list">
@@ -281,22 +268,34 @@
                                 </li>
                             </ol>
                         </div>
-                        <!-- 点击编辑之后出现的弹窗 -->
-                        <div class="edit-popup cm-popup">
-                            <!-- 右侧关闭按钮 -->
-                            <span class="add-close"></span>
-                            <p class="add-top">编辑</p>
-                            <div class="inputbox">
-                                <span>名称</span>
-                                <input type="text">
-                            </div>
-                            <input class="confirm-add" type="button" value="添加">
-                            <input class="cancel-add" type="button" value="取消">
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- 点击添加章按钮时的弹窗 -->
+    <div class="add-chapter cm-popup">
+        <!-- 右侧关闭按钮 -->
+        <span class="add-close"></span>
+        <p class="add-top">添加章</p>
+        <div class="inputbox">
+            <span>章标题</span>
+            <input type="text">
+        </div>
+        <input class="confirm-add" type="button" value="添加">
+        <input class="cancel-add" type="button" value="取消">
+    </div>
+    <!-- 点击编辑之后出现的弹窗 -->
+    <div class="edit-popup cm-popup">
+        <!-- 右侧关闭按钮 -->
+        <span class="add-close"></span>
+        <p class="add-top">编辑</p>
+        <div class="inputbox">
+            <span>名称</span>
+            <input type="text">
+        </div>
+        <input class="confirm-add" type="button" value="添加">
+        <input class="cancel-add" type="button" value="取消">
     </div>
     <!-- 黑色遮罩层 -->
     <div class="masker"></div>
@@ -326,7 +325,6 @@
         </div>
     </div>
     <script src="js/jquery-3.1.1.min.js"></script>
-    <!-- <script src="js/bootstrap.min.js"></script> -->
     <script src="js/common.js"></script>
     <script src="js/echarts.js"></script>
     <script src="js/jquery.nestable.js"></script>

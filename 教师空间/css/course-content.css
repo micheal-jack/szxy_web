@@ -163,7 +163,7 @@
     background: #fff;
 }
 
-.course-information {
+.class-management {
     display: none;
 }
 
@@ -403,9 +403,12 @@ input[type=radio]:checked + label {
     left: 50%;
     display: none;
     width: 554px;
-    height: 207px;
-    margin-top: -100px;
-    margin-left: -277px;
+    min-height: 207px;
+    padding-bottom: 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     background: #fff;
 }
 
@@ -782,9 +785,10 @@ input[type=radio]:checked + label {
 
 
 /***************************头像设置页面部分css*********************************/
+
 .avatar-setting,
 .login-info-modify {
-    width:92%;
+    width: 92%;
     margin: 0 auto;
 }
 
@@ -792,12 +796,14 @@ input[type=radio]:checked + label {
     height: 250px;
     overflow: hidden;
 }
+
 .avatar-option img {
-    width:210px;
+    width: 210px;
     height: 210px;
     border: 1px solid #c1c1c1;
     margin-top: 20px;
 }
+
 .lim-option .select-file {
     width: 99px;
     height: 35px;
@@ -807,9 +813,8 @@ input[type=radio]:checked + label {
 }
 
 
-
-
 /***************************账号设置页面部分css*********************************/
+
 .login-info-modify {
     display: none;
 }
