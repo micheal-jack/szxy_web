@@ -153,22 +153,37 @@
 }
 
 .if-notify + label {
-    background: #999;
+    background: url(../images/no-send.png) no-repeat;
     height: 16px;
-    width: 16px;
+    width: 100%;
+    font-size: 14px;
+    color: #666;
+    text-indent: 20px;
+    line-height: 16px;
     display: inline-block;
-    padding: 0 0 0 0px;
+    cursor: pointer;
 }
 
 .if-notify:checked + label {
-    background: #0080FF;
-    height: 16px;
-    width: 16px;
-    display: inline-block;
-    padding: 0 0 0 0px;
+    background: url(../images/send-message.png) no-repeat;
 }
-
-
+.save-modify,
+.cancel-modify {
+    width: 78px;
+    color: #fff;
+    font-size: 14px;
+    height: 30px;
+    border-radius: 2px;
+    float: right;
+    margin-top: 16px;
+}
+.save-modify {
+    background: #f25719;
+}
+.cancel-modify {
+    background: #36b991;
+    margin-left: 12px;
+}
 /*学习进度部分css*/
 
 .learning-rate {
