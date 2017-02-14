@@ -17,9 +17,6 @@ $(function() {
     // output initial serialised data
     updateOutput($('#nestable').data('output', $('#nestable-output')));
 
-
-
-
     // 点击添加章按钮，出现弹窗
     $(".add").click(function() {
         $(".masker, .add-chapter").show();

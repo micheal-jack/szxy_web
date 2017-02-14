@@ -1,11 +1,11 @@
 /*主题左侧div*/
 
 .left-div {
+    float: left;
     width: 930px;
     height: auto;
     border: 1px solid #e7e7e7;
     background: #fff;
-    float: left;
 }
 
 .ld-tab {
@@ -15,10 +15,10 @@
 }
 
 .ld-tab .active {
+    line-height: 44px;
     margin-top: -1px;
     color: #f34c00;
     border-top: 4px solid #f34c00;
-    line-height: 44px;
 }
 
 .ld-tab a {
@@ -43,8 +43,8 @@
 
 .course-info p {
     font-size: 14px;
-    color: #666;
     line-height: 32px;
+    color: #666;
 }
 
 .course-info .ci-title {
@@ -58,6 +58,104 @@
 
 .course-info .ci-title span {
     color: #e60012;
+}
+
+
+/*学习目录部分css*/
+
+.learning-directory {
+    display: none;
+    padding: 23px 10px 50px;
+}
+
+
+/*课程学习数据部分css*/
+
+.learning-data {
+    display: none;
+    padding: 20px 20px 50px;
+}
+
+.data-ul {
+    width: 888px;
+    border: 1px solid #e7e7e7;
+}
+
+.data-ul li {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.data-ul li:nth-child(2n+1) {
+    background: #fbfbfb;
+}
+
+.data-ul li:last-child {
+    border-bottom: none;
+}
+
+.data-ul .data-title {
+    height: 41px;
+    background: #f3f3f3!important;
+}
+
+.data-ul li span {
+    font-size: 12px;
+    line-height: 40px;
+    display: block;
+    float: left;
+    width: 19%;
+    text-align: center;
+    color: #333;
+    border-right: 1px solid #e7e7e7;
+}
+
+.data-ul .data-title span {
+    font-size: 14px;
+    color: #999;
+}
+
+.data-ul li span:nth-of-type(3) {
+    width: 24%;
+}
+
+.data-ul li span:last-child {
+    border: none;
+}
+
+.data-ul .data1-title span {
+    border-color: #fff;
+}
+
+.data-ul2 {
+    margin-top: 20px;
+}
+
+.data-ul2 .data-title {
+    height: 61px;
+}
+
+.data-ul2 .data-title span {
+    line-height: 18px;
+    height: 100%;
+    padding-top: 14px;
+}
+
+.data-ul2 .data-title span:first-child {
+    line-height: 36px;
+}
+
+.data-ul2 li span {
+    width: 12.5%;
+}
+
+.data-ul2 li span:first-child {
+    width: 25%;
+}
+
+.data-ul2 li span:nth-of-type(3) {
+    width: 12.5%;
 }
 
 
@@ -79,23 +177,23 @@
 }
 
 .cn-title {
-    height: 51px;
     line-height: 50px;
-    border-bottom: 1px solid #e7e7e7;
+    height: 51px;
     text-indent: 30px;
     color: #333;
+    border-bottom: 1px solid #e7e7e7;
 }
 
 .cn-title a {
     font-size: 14px;
-    color: #f25719;
     margin-left: 90px;
+    color: #f25719;
 }
 
 .cn-text {
-    padding: 20px 28px 0;
     font-size: 12px;
     line-height: 24px;
+    padding: 20px 28px 0;
 }
 
 .cn-manage {
@@ -104,10 +202,10 @@
 
 .cn-manage a {
     font-size: 12px;
-    color: #999;
+    display: block;
     float: right;
     width: 50px;
-    display: block;
+    color: #999;
 }
 
 .cn-manage i {
@@ -117,8 +215,8 @@
 }
 
 .cn-manage .delete {
-    margin-left: 10px;
     margin-right: 20px;
+    margin-left: 10px;
 }
 
 .icon-modify {
@@ -141,8 +239,8 @@
 .modify-notice textarea {
     width: 229px;
     height: 126px;
-    border: 1px solid #e7e7e7;
     padding: 10px;
+    border: 1px solid #e7e7e7;
 }
 
 
@@ -153,37 +251,42 @@
 }
 
 .if-notify + label {
-    background: url(../images/no-send.png) no-repeat;
-    height: 16px;
-    width: 100%;
     font-size: 14px;
-    color: #666;
-    text-indent: 20px;
     line-height: 16px;
     display: inline-block;
+    width: 100%;
+    height: 16px;
     cursor: pointer;
+    text-indent: 20px;
+    color: #666;
+    background: url(../images/no-send.png) no-repeat;
 }
 
 .if-notify:checked + label {
     background: url(../images/send-message.png) no-repeat;
 }
+
 .save-modify,
 .cancel-modify {
-    width: 78px;
-    color: #fff;
     font-size: 14px;
-    height: 30px;
-    border-radius: 2px;
     float: right;
+    width: 78px;
+    height: 30px;
     margin-top: 16px;
+    color: #fff;
+    border-radius: 2px;
 }
+
 .save-modify {
     background: #f25719;
 }
+
 .cancel-modify {
-    background: #36b991;
     margin-left: 12px;
+    background: #36b991;
 }
+
+
 /*学习进度部分css*/
 
 .learning-rate {
@@ -200,15 +303,15 @@
 }
 
 .rate-list {
-    height: 86px;
     width: 100%;
+    height: 86px;
     padding-top: 13px;
 }
 
 .rl-avatar {
+    float: left;
     width: 63px;
     height: 63px;
-    float: left;
 }
 
 .rl-right {
@@ -218,8 +321,8 @@
 
 .rlr-name {
     font-size: 14px;
-    color: #333;
     margin-bottom: 15px;
+    color: #333;
 }
 
 .rlr-progress {
@@ -233,14 +336,14 @@
 .progress {
     width: 100%;
     height: 5px;
-    background: #e7f6f7;
-    border-radius: 3px;
     margin-top: 5px;
+    border-radius: 3px;
+    background: #e7f6f7;
 }
 
 .progress-inner {
-    height: 5px;
     width: 50%;
-    background: #f8b551;
+    height: 5px;
     border-radius: 3px;
+    background: #f8b551;
 }

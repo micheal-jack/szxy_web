@@ -1,0 +1,645 @@
+.main-container {
+    overflow: hidden;
+    width: 100%;
+    background: #f5f5f5;
+}
+
+
+/*主体内容区域css*/
+
+.main {
+    overflow: hidden;
+    width: 1220px;
+    height: auto;
+    margin: 20px auto 0;
+    padding-bottom: 20px;
+}
+
+
+/*主体左侧内容区域*/
+
+.main-left {
+    float: left;
+    width: 930px;
+}
+
+
+/*待办事项*/
+
+.todo {
+    width: 100%;
+    height: 184px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+}
+
+.todo-title,
+.tc-title,
+.dynamics-title {
+    line-height: 48px;
+    width: 100%;
+    height: 49px;
+    text-indent: 8px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.icon-todo,
+.icon-tc,
+.icon-dynamics {
+    float: left;
+    width: 16px;
+    height: 12px;
+    margin-top: 19px;
+    margin-left: 20px;
+    background: url(../images/todo.png);
+}
+
+.pending-homework,
+.pending-question {
+    font-size: 14px;
+    line-height: 80px;
+    float: left;
+    width: 222px;
+    height: 80px;
+    margin-top: 20px;
+    text-indent: 9px;
+    color: #333;
+    border: 1px solid #e7e7e7;
+}
+
+.pending-homework span,
+.pending-question span {
+    color: #fb9514;
+}
+
+.icon-homework,
+.icon-question {
+    display: block;
+    float: left;
+    width: 45px;
+    height: 45px;
+    margin-top: 16px;
+    margin-left: 24px;
+}
+
+.icon-homework {
+    background: url(../images/icon-homework.png);
+}
+
+.icon-question {
+    background: url(../images/icon-question.png);
+}
+
+.pending-homework {
+    margin-left: 21px;
+}
+
+
+/*在教课程*/
+
+.teaching-course,
+.dynamics {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+}
+
+.tcul {
+    overflow: hidden;
+}
+
+.tcul li {
+    float: left;
+    width: 283px;
+    height: 358px;
+    margin-left: 21px;
+    padding-top: 20px;
+}
+
+.tcul li .pie-box {
+    width: 100%;
+    height: 270px;
+    padding: 10px 12px 0;
+    border: 1px solid #e7e7e7;
+}
+
+.tc-info {
+    line-height: 64px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+}
+
+.lesson {
+    font-size: 12px;
+    line-height: 20px;
+    width: 58px;
+    height: 21px;
+    text-indent: 4px;
+    color: #fff;
+    border-radius: 2px;
+    background: #36b991;
+}
+
+.icon-lesson {
+    display: block;
+    float: left;
+    width: 15px;
+    height: 14px;
+    margin-top: 4px;
+    margin-left: 7px;
+    background: url(../images/icon-lesson.png);
+}
+
+
+/*我的动态部分css*/
+
+.dynamics {
+    margin-top: 20px;
+}
+.time-axis {
+	width: 100%;
+	padding: 16px 24px 0;
+	overflow: hidden;
+}
+.time-axis li {
+	overflow: hidden;
+}
+.ta-top {
+	width: 100%;
+	height: 50px;
+}
+
+.ta-top img {
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.ta-top .today {
+	display: block;
+	width: 87px;
+	height: 23px;
+	background: url(../images/ta-top.png);
+	float: left;
+	text-indent: 37px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 23px;
+	margin-top: 9px;
+
+}
+.left-line {
+	width: 1px;
+	height: 85px;
+	border-right: 1px solid #e7e7e7;
+	margin-left: 24px;
+	position: relative;
+	float: left;
+}
+.left-line .time {
+	width: 53px;
+	height: 18px;
+	border-radius: 2px;
+	border: 1px solid #e7e7e7;
+	line-height: 18px;
+	font-size: 12px;
+	color: #333;
+	position: absolute;
+	left:-24px;
+	background: #fff;
+	text-align: center;
+	top: 12px;
+}
+.right-info {
+	width: 815px;
+	height: 52px;
+	border: 1px solid #e7e7e7;
+	float:left;
+	line-height: 50px;
+	text-indent: 20px;
+	margin-left: 38px;
+	position: relative;
+	margin-top: 5px;
+}
+.right-info .icon-triangle {
+	width: 11px;
+	height: 18px;
+	background: url(../images/triangle.jpg);
+	display: block;
+	position: absolute;
+	left: -10px;
+	top: 6px;
+}
+.right-info .greenfont {
+	color: #36b991;
+}
+.yesterday {
+	height: 41px;
+	background: url(../images/yesterday.jpg) no-repeat 14px top;
+	font-size: 12px;
+	color: #fff;
+	text-indent: 90px;
+	line-height: 24px;
+}
+/*右侧主体区域*/
+
+.main-right {
+    float: right;
+    width: 272px;
+}
+
+
+/*个人头像和信息*/
+
+.user-info {
+    width: 100%;
+    height: 369px;
+    padding-top: 26px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+}
+
+.user-avatar {
+    width: 112px;
+    height: 112px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.user-name {
+    font-size: 24px;
+    line-height: 66px;
+    height: 66px;
+    text-align: center;
+    color: #333;
+}
+
+.user-school {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.attention,
+.fans {
+    float: left;
+    width: 50%;
+    height: 86px;
+}
+
+.attention {
+    border-right: 1px solid #e7e7e7;
+}
+
+.attention p,
+.fans p {
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+.attention .number {
+    font-size: 30px;
+    line-height: 58px;
+    color: #db7a62;
+}
+
+.fans .number {
+    font-size: 30px;
+    line-height: 58px;
+    color: #36b991;
+}
+
+
+/*签到部分css*/
+
+.checkin {
+    overflow: hidden;
+    width: 100%;
+    height: 337px;
+    margin-top: 20px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+}
+
+.clear {
+    line-height: 0;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    height: 0;
+}
+
+.clearfix:after {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ' ';
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.title {
+    font-size: 14px;
+    width: 100%;
+    height: 54px;
+    color: #fff;
+    background: #36b991;
+}
+
+.title p {
+    font-size: 16px;
+    line-height: 54px;
+    float: left;
+    width: 196px;
+    height: 54px;
+    text-align: center;
+}
+
+.next-month,
+.last-month {
+    display: block;
+    float: left;
+    width: 11px;
+    height: 21px;
+    margin-top: 17px;
+    cursor: pointer;
+}
+
+.last-month {
+    margin-left: 24px;
+    background: url(../images/last-month.png);
+}
+
+.next-month {
+    background: url(../images/next-month.png);
+}
+
+.sign-days {
+    font-size: 12px;
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: #666;
+}
+
+.week {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.checkin li {
+    font-size: 12px;
+    line-height: 30px;
+    float: left;
+    text-align: center;
+    color: #333;
+}
+
+li.able-qiandao {
+    color: #fff;
+    background: url(../images/today.png) no-repeat center;
+}
+
+li.checked {
+    color: #e60012;
+    background: url(../images/checked.png) no-repeat center;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    transition: all .25s ease;
+    background-color: rgba(0, 0, 0, .55);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 450px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -225px;
+    transition: all .25s ease;
+    transform: translateY(-200%);
+    border: 5px solid #42941a;
+    border-radius: 10px;
+    background: #fff;
+}
+
+a.closeBtn {
+    font-family: 'simsun';
+    font-size: 18px;
+    font-weight: bolder;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.title_h1 {
+    font-size: 40px;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.title_h1 span {
+    position: relative;
+    display: inline-block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+    margin-left: 30%;
+    color: #fff;
+    border-radius: 100%;
+    background: #42941a;
+}
+
+.title_h1 span::before {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 23px;
+    left: 8px;
+    display: block;
+    width: 10px;
+    height: 2px;
+    content: '';
+    transform: rotate(52deg);
+    background: #fff;
+}
+
+.title_h1 span::after {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    display: block;
+    width: 24px;
+    height: 2px;
+    content: '';
+    transform: rotate(-45deg);
+    background: #fff;
+}
+
+.title_h1 em {
+    font-size: 30px;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+
+.title_h1 i {
+    font-size: 16px;
+    display: inline-block;
+    float: left;
+    margin: 14px 0 0 10px;
+}
+
+.title_h2 {
+    font-size: 16px;
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.title_h2 span {
+    font-size: 36px;
+    color: #b25d06;
+}
+
+.trf {
+    visibility: visible;
+}
+
+.trf .modal {
+    transform: translateY(0);
+}
+
+.checkBtn {
+    font-size: 16px;
+    line-height: 37px;
+    display: block;
+    width: 126px;
+    height: 37px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 18px;
+    background: #36b991;
+}
+
+
+/*今日课表*/
+
+.schedule,
+.myclass {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #e7e7e7;
+    background: #fff;
+}
+
+.sch-title {
+    line-height: 50px;
+    height: 51px;
+    text-indent: 20px;
+    color: #333;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sch-ul {
+    width: 230px;
+    margin: 0 auto;
+}
+
+.sch-ul li {
+    width: 100%;
+    height: 123px;
+    padding-top: 18px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sch-ul li:last-child {
+    border-bottom: none;
+}
+
+.icon-time {
+    float: left;
+    width: 25px;
+    height: 25px;
+    background: url(../images/time.png);
+}
+
+.sch-info {
+    float: left;
+    margin-left: 10px;
+}
+
+.sch-info p {
+    font-size: 14px;
+    line-height: 30px;
+    color: #333;
+}
+
+.sch-info p:first-child {
+    font-size: 12px;
+    line-height: 26px;
+}
+
+
+/*我的班级*/
+
+.class-ul {
+    width: 100%;
+    padding: 16px 19px 0;
+}
+
+.class-ul li {
+    width: 100%;
+    height: 105px;
+}
+
+.class-ul li img {
+    float: left;
+    width: 107px;
+    height: 85px;
+}
+
+.class-ul li .class-info {
+    float: left;
+    margin-left: 20px;
+}
+
+.class-info p {
+    font-size: 12px;
+    line-height: 24px;
+}
+
+.class-info p:first-child {
+    margin-top: 20px;
+}
+
+.class-info .redfont {
+    color: #f25719;
+}

@@ -72,12 +72,13 @@ $(function() {
     // tab切换部分js
     $(".ld-tab a").click(function() {
         $(this).addClass("active").siblings().removeClass("active");
+        var index = $(this).index();
+        $(".tab-container > div").eq(index).show().siblings().hide();
     });
 
     $(".rate-ul .rate-list").each(function() {
         var line = $(this).find(".progress-inner");
         var percent = $(this).find(".rlr-progress").text().replace(/[^0-9]/ig, "");
-        console.log(percent);
         line.css("width", percent + "%");
     });
 

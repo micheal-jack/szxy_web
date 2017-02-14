@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>课程内容</title>
+    <title>查看课程</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/same.css">
     <link rel="stylesheet" href="css/course-content.css">
@@ -87,6 +87,7 @@
                         <a href="javascript:;">课程学习数据</a>
                     </div>
                     <div class="tab-container">
+                        <!--=========================== 课程信息对应div =====================================-->
                         <div class="course-info">
                             <p class="ci-title">课程简介</p>
                             <p class="textindent2em">首先学习汉字的必要性：①汉字是母语文字，随处可见，应当充分利用。拼音不是汉民族的母语，不应当脱离母语环境学习拼音。学生入学后首先学习拼音，客观上灌输汉字必须向拼音文字靠拢的意识。②汉字是方块字，像一幅图画，儿童认识汉字比认识拼音字母容易得多。拼音不是文字，只记录语音，学习拼音不是识字。</p>
@@ -107,9 +108,136 @@
                                 计划互动直播课堂数：<span>40</span>
                             </p>
                         </div>
-                        <div class="learning-directory"></div>
+                        <!--============================== 学习目录对应div ====================================-->
+                        <div class="learning-directory">
+                            <div class="dd" id="nestable">
+                                <ol class="dd-list">
+                                    <li class="dd-item" data-id="1">
+                                        <div class="dd-handle">第1章 第一单元 小猫的故事</div>
+                                    </li>
+                                    <li class="dd-item" data-id="2">
+                                        <div class="dd-handle">第2章 第一单元 唐诗三百首</div>
+                                        <ol class="dd-list">
+                                            <li class="dd-item" data-id="3">
+                                                <div class="dd-handle">第1节 识字学词 学句子（一）1</div>
+                                                <ol class="dd-list">
+                                                    <li class="dd-item" data-id="4">
+                                                        <div class="dd-handle">第1课时：不懂这个问题怎么解决
+                                                            <span class="link-resource">5个<i class="icon-type"></i></span>
+                                                            <!-- 未发布提示 -->
+                                                            <span class="unpublished">未发布</span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="dd-item" data-id="5">
+                                                        <div class="dd-handle">课前导学</div>
+                                                    </li>
+                                                    <li class="dd-item" data-id="6">
+                                                        <div class="dd-handle">教学课件</div>
+                                                    </li>
+                                                    <li class="dd-item" data-id="7">
+                                                        <div class="dd-handle">相关学习资源 </div>
+                                                    </li>
+                                                </ol>
+                                            </li>
+                                            <li class="dd-item" data-id="8">
+                                                <div class="dd-handle">Item 8</div>
+                                            </li>
+                                            <li class="dd-item" data-id="9">
+                                                <div class="dd-handle">Item 9</div>
+                                            </li>
+                                            <li class="dd-item" data-id="10">
+                                                <div class="dd-handle">Item 10</div>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                    <li class="dd-item" data-id="11">
+                                        <div class="dd-handle">Item 11</div>
+                                    </li>
+                                    <li class="dd-item" data-id="12">
+                                        <div class="dd-handle">Item 12</div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <!--========================== 在线问答对应div ==================================-->
                         <div class="online-question"></div>
-                        <div class="learning-data"></div>
+                        <!--========================== 课程学习数据对应div ===============================-->
+                        <div class="learning-data">
+                            <ul class="data-ul">
+                                <li class="data-title">
+                                    <span>课程学习人数</span>
+                                    <span>课程完成人数</span>
+                                    <span>课程平均学习时长(分)</span>
+                                    <span>课程提问总数</span>
+                                    <span>课程笔记总数</span>
+                                </li>
+                                <li>
+                                    <span>22</span>
+                                    <span>15</span>
+                                    <span>250</span>
+                                    <span>12</span>
+                                    <span>60</span>
+                                </li>
+                            </ul>
+                            <ul class="data-ul data-ul2">
+                                <li class="data-title">
+                                    <span>课时名称</span>
+                                    <span>课时学习<br>人数</span>
+                                    <span>课时完成<br>人数</span>
+                                    <span>课时平均学习<br>时长(分)</span>
+                                    <span>音视频<br>时长(分)</span>
+                                    <span>音视频平均观看<br>时长(分)</span>
+                                    <span>测试平均<br>得分</span>
+                                </li>
+                                <li>
+                                    <span>古诗词欣赏（图文）</span>
+                                    <span>25</span>
+                                    <span>5</span>
+                                    <span>350</span>
+                                    <span>90</span>
+                                    <span>5</span>
+                                    <span>100</span>
+                                </li>
+                                </li>
+                                <li>
+                                    <span>古诗词欣赏（图文）</span>
+                                    <span>25</span>
+                                    <span>5</span>
+                                    <span>350</span>
+                                    <span>90</span>
+                                    <span>5</span>
+                                    <span>100</span>
+                                </li>
+                                </li>
+                                <li>
+                                    <span>古诗词欣赏（图文）</span>
+                                    <span>25</span>
+                                    <span>5</span>
+                                    <span>350</span>
+                                    <span>90</span>
+                                    <span>5</span>
+                                    <span>100</span>
+                                </li>
+                                <li>
+                                    <span>古诗词欣赏（图文）</span>
+                                    <span>25</span>
+                                    <span>5</span>
+                                    <span>350</span>
+                                    <span>90</span>
+                                    <span>5</span>
+                                    <span>100</span>
+                                </li>
+                                <li>
+                                    <span>古诗词欣赏（图文）</span>
+                                    <span>25</span>
+                                    <span>5</span>
+                                    <span>350</span>
+                                    <span>90</span>
+                                    <span>5</span>
+                                    <span>100</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <!-- 主体右侧 -->
@@ -126,8 +254,8 @@
                         </div>
                         <div class="modify-notice">
                             <textarea></textarea>
-                            
-                            <input class="if-notify" type="checkbox" checked id="thing"/><label for="thing">发送系统消息给该学生</label>
+                            <input class="if-notify" type="checkbox" checked id="thing" />
+                            <label for="thing">发送系统消息给该学生</label>
                             <input class="cancel-modify" type="button" value="取消">
                             <input class="save-modify" type="button" value="保存">
                         </div>
@@ -212,6 +340,8 @@
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/echarts.js"></script>
+    <script src="js/jquery.nestable.js"></script>
+    <script src="js/course-content.js"></script>
 </body>
 
 </html>
