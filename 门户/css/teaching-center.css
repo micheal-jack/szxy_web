@@ -4,9 +4,11 @@
     width: 980px;
     margin: 0 auto;
 }
-.navul li:nth-child(6) a{
+
+.navul li:nth-child(6) a {
     color: #f25719;
 }
+
 
 /*教师空间核心功能*/
 
@@ -94,7 +96,6 @@
 @media screen and (min-width: 1024px) {
     .container {
         width: 1220px;
-
     }
     .teacher p {
         margin-left: 155px;
@@ -102,6 +103,4 @@
     .student div {
         margin-left: 137px;
     }
-
-
 }

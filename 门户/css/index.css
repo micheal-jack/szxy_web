@@ -142,9 +142,9 @@
 }
 
 .newsimg img {
+    display: none;
     width: 450px;
     height: 280px;
-    display: none;
 }
 
 .newsimg .show {
@@ -274,9 +274,9 @@
     font-size: 18px;
     float: left;
     width: 124px;
+    cursor: pointer;
     text-align: center;
     border-radius: 18px;
-    cursor: pointer;
 }
 
 .studiotop .choose {
@@ -477,24 +477,24 @@
 
 .answer {
     line-height: 24px;
+    position: relative;
     width: 808px;
     padding: 10px 10px 20px;
     background: #f7f7f7;
-    position: relative;
 }
 
 .answer .answercontent {
-    height: 48px;
     overflow: hidden;
+    height: 48px;
 }
 
 .answer .seemore {
-    padding-right: 16px;
-    background: url(../images/seemore.jpg) no-repeat right 8px;
     position: absolute;
     right: 20px;
     bottom: 0;
+    padding-right: 16px;
     cursor: pointer;
+    background: url(../images/seemore.jpg) no-repeat right 8px;
 }
 
 .answerer {

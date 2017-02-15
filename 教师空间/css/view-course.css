@@ -77,7 +77,7 @@
 }
 
 .data-ul {
-    width: 888px;
+    width: 100%;
     border: 1px solid #e7e7e7;
 }
 
@@ -346,4 +346,22 @@
     height: 5px;
     border-radius: 3px;
     background: #f8b551;
+}
+
+
+/*当屏幕中间显示区域兼容到980px时*/
+
+@media screen and (max-width: 1024px) {
+    .left-div {
+        width: 700px;
+    }
+    .learning-data {
+        padding: 20px 10px 50px;
+    }
+    .data-ul2 .data-title {
+        height: 80px;
+    }
+    .data-ul2 .data-title span:first-child {
+        line-height: 58px;
+    }
 }
